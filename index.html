@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Melodi Ya Tshwane-Home</title>
+	
+	<!-- Bootstrap v3.3.7-->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<!-- URCSA Melodi Ya Tshwane Custom Stylesheet -->
+	<link href="css/urcsa-myt-style.css" rel="stylesheet">
+	<!-- The following is used to add video support for flash player as a fallback to HTML5 <video> -->
+	<script src="js/jwplayer.js"></script>
+	<script src="js/swfobject.js"></script>
+	
+    <!-- The following is used to enable IE versions lower than version 9 to support HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<!-- Warning that this is just a demo website and not a live website -->
+	<div class="alert alert-warning container myt-cen-txt">
+		<p><strong>WARNING! THIS IS A DEMO WEBSITE!!</strong></p>
+	</div>
+	<header>	<!-- Header Section -->
+		<div class="container clearfix">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<a href="index.html">
+						<img alt="Picture of MYT URCSA logo" src="assets/mytLogo_300x60.png" 
+							class="img-responsive" role="logo">
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 pull-right">
+						<form style="margin-top: 5px" action="" method="post" 
+							role="search">
+							<div class="form-group has-feedback has-feedback-right">
+								<input type="search" name="search" class="form-control" placeholder="Search">
+								<i class="glyphicon glyphicon-search form-control-feedback"></i>
+							</div>
+						</form>
+				</div>
+			</div>
+		</div>
+		<div class="container clearfix"> <!-- Nav Container -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<nav class="navbar navbar-default navbar-static-top" role="navigation">
+						<span class="sr-only">Top Navigation</span>
+						<div class="navbar-header">
+							<div class="myt-cen-txt">	<!-- center the navbar-toggle -->
+								<button type="button" class="navbar-toggle" data-toggle="collapse" 
+									data-target="#myt-navbar-collapse">
+									<div class="center-block">
+										<span class="sr-only">Toggle Top Navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="myt-white-font"><b>MENU</b></span>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="collapse navbar-collapse" id="myt-navbar-collapse">
+							<ul class="nav navbar-nav navbar-left">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">Announcements</a></li>
+								<li><a href="#">Events</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Congregation
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Ministries</a></li>
+										<li><a href="#">Committees</a></li>
+										<li><a href="#">Sunday School</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Donations</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">About us
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">History</a></li>
+										<li><a href="#">Vision</a></li>
+										<li><a href="#">Reverend</a></li>
+									</ul>
+								</li>
+								<li><a href="#" data-toggle="modal" 
+									data-target="#myt-contact-modal">Contact us</a></li>
+							</ul>
+						</div>
+					</nav>  
+				</div>
+			</div>
+		</div>						 <!-- End Nav Container -->
+	</header>						 <!-- End Header Section -->
+	<div class="container clearfix"> <!-- Main Body Container -->
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<!-- Carousel -->
+				<div id="myt-home-carousel" class="carousel slide" data-interval="6000" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#myt-home-carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myt-home-carousel" data-slide-to="1"></li>
+						<li data-target="#myt-home-carousel" data-slide-to="2"></li>
+						<li data-target="#myt-home-carousel" data-slide-to="3"></li>
+						<li data-target="#myt-home-carousel" data-slide-to="4"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="assets/event1_1140X330.jpg" alt="First Upcoming Event picture">
+						</div>
+						<div class="item">
+							<img src="assets/event2_1140X330.jpg" alt="Second Upcoming Event picture">
+						</div>
+						<div class="item">
+							<img src="assets/event3_1140X330.jpg" alt="Outreach Programme picture">
+						</div>
+						<div class="item">
+							<img src="assets/event4_1140X330.jpg" alt="Committee picture">
+						</div>
+						<div class="item">
+							<img src="assets/event5_1140X330.jpg" alt="Past Event picture">
+						</div>
+					</div>
+					<a class="carousel-control left" href="#myt-home-carousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control right" href="#myt-home-carousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>	<!-- End Carousel -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<article>
+					<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h1><span class="glyphicon glyphicon-book"></span>&nbsp;URCSA Melodi Ya Tshwane</h1>
+						<p>Place church tagline here (e.g. Stewardship for God, Living Belhar, etc). 
+						 	Keep it simple (one line) since we have a whole page dedicated to Vision and History.</p>
+						<div class="jumbotron col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<h2>Scripture of the week</h2>
+							<p>Place scripture of the week here - last Sunday's scripture reading. This will be changed 
+							   every week after church. We can also pre-load multiple scriptures per month (four per month for each week) -
+							   which can be determined by council - and randomize the selection of the scriptures automatically with a script. 
+							<br><b>e.g. Book:Chapter:Verse:</b></p><blockquote>"Quote..."</blockquote>
+						</div>
+					</section>
+					<section class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+						<h1><span class="glyphicon glyphicon-user"></span>&nbsp;Join our Congregation</h1>
+						<p>Place content about joining the church to make the home page the first place
+						 people can use to join the church - e.g. Church starts at 10 AM every Sunday. Click button below to join.</p>
+						 <div class="myt-cen-txt">
+							 <button class="btn btn-primary btn-lg" data-toggle="modal"
+							 	data-target="#myt-join-modal">Join</button>
+						 </div>
+					</section>
+					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
+						<img alt="Picture of Reverend" src="assets/rev_360X264.jpg" class="img-responsive center-block"> 
+					</div>
+					<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h1><span class="glyphicon glyphicon-facetime-video"></span>&nbsp;Past Event Video</h1>
+						<p>Place video content here of any past church event that is worthy of being viewed over and over by web users.</p>
+						<!-- Start Video Markup: http://camendesign.com/code/video_for_everybody -->
+						<div class="embed-responsive embed-responsive-16by9">
+	 						<video poster="assets/eventVideo/eventPoster.jpg" controls width="720" height="405"
+								preload="none" class="embed-responsive-item">
+								<source src="assets/eventVideo/bigBuckBunny.webm" type="video/vp8"></source> <!-- IE -->
+								<source src="assets/eventVideo/bigBuckBunny.mp4" type="video/mp4"></source>	 <!-- Safari/iOs -->
+								<source src="assets/eventVideo/bigBuckBunny.ogv" type="video/ogg"></source>	 <!-- Firefox/Opera/Chrome10 -->
+								<!-- Add fallback for flash using 'swfobject.js' -->
+								<object id="mytVideoPlayer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+									name="player" width="720" height="429">
+										<param name="movie" value="player.swf"/>
+										<param name="allowfullscreen" value="true"/>
+										<param name="allowscriptaccess" value="always"/>
+										<param name="flashvars" 
+											value="file=assets/eventVideo/bigBuckBunny.mp4&image=assets/eventVideo/eventPoster.jpg"/>
+										<embed src="application/x-shockwave-flash" id="mytVideoPlayer2" name="mytVideoPlayer2"
+											src="player.swf" width="720" height="429" allowscriptaccess="always"
+											allowfullscreen="true" 
+											flashvars="file=file=assets/eventVideo/bigBuckBunny.mp4&image=assets/eventVideo/eventPoster.jpg"/>
+										<img src="assets/eventVideo/eventPoster.jpg" title="Your web browser has no video playback capabilities, 
+											please download	the video below">
+										<p>Your web browser does not support video, please <a href="assets/eventVideo/bigBuckBunny.mp4">
+											download the video</a>.</p>								
+								</object>
+							</video>
+						</div>
+						<!-- End Video Markup -->
+					</section>
+				</article>
+			</div>
+		</div>
+		<div class="row hidden-sm hidden-xs">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<article>
+					<h1><span class="glyphicon glyphicon-comment"></span>&nbsp;Social Media Space</h1>
+					<!-- Twitter Plugin -->
+					<a class="twitter-timeline" data-width="1140" data-height="440" 
+						href="https://twitter.com/urcsamyt?ref_src=twsrc%5Etfw">Tweets by urcsamyt</a> 
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+				</article>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<a href="https://www.facebook.com/melodiyatshwane/" target="_blank">
+						<img class="img-responsive center-block" alt="Facebook Icon. White background with 
+							a Black Facebook logo centered." src="assets/fbIcon64x64.png"><span>Facebook</span> 
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<a href="https://twitter.com/urcsamyt" target="_blank">
+						<img class="img-responsive center-block" alt="Twitter Icon. White background with 
+							a Black Twitter logo centered." src="assets/twitterIcon64x64.png"><span>Twitter</span>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<a href="https://www.instagram.com/urcsamyt/" target="_blank">
+						<img class="img-responsive center-block" alt="Instagram Icon. White background with 
+							a Black Instagram logo centered." src="assets/instagramIcon64x64.png"><span>Instagram</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div> 								<!-- End Main Body Container -->
+	<footer>	<!-- Footer -->
+		<div class="container">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<p><span class="glyphicon glyphicon-home">&nbsp;</span>Address:</p>
+						</div>
+						<div class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
+							<p>Place the Physical and Postal Address of the Church here</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<p><span class="glyphicon glyphicon-envelope">&nbsp;</span>Email:</p>
+						</div>
+						<div class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
+							<p>Place the email Address of the Church here</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+							<p><span class="glyphicon glyphicon-phone-alt">&nbsp;</span>Phone:</p>
+						</div>
+						<div class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
+							<p>Place the contact number of the Church here</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 myt-cen-txt">
+					<p><a href="#" target="_blank">Newsletter</a></p>
+					<p><a href="#" target="_blank">Downloads</a></p>
+					<p><a href="http://urcsa.net/" target="_blank">Affilations</a></p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 myt-cen-txt">
+					<p>
+						<span class="glyphicon glyphicon-phone">&nbsp;</span>
+						<a href="#" target="_blank">Download our mobile App</a></p>
+					<p><a href="#" target="_blank"><img class="img-responsive center-block" 
+						src="assets/googlePlayBadge320x200.png"></img></a></p>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
+				<p>
+					Copyright &copy; URCSA Melodi Ya Tshwane 2018 | Website developed by 
+					<a href="#" target="_blank">__</a>
+				</p>
+			</div>
+		</div>
+	</footer>	<!-- End Footer -->
+	
+	<!-- Contact us Modal -->
+	<div id="myt-contact-modal" class="modal fade" tabindex="-1" role="dialog"
+		aria-labelledby="myt-contact-modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myt-contact-modal-label">
+						Contact Melodi Ya Tshwane</h4>
+				</div>
+				<div class="modal-body">
+					<form method="post" role="Submit">
+						<div class="form-group">
+							<label for = "name">Name</label>
+							<input type="text" class="form-control" placeholder="Enter Full Name">
+						</div>
+						<div class="form-group">
+							<label for = "phone">Phone</label>
+							<input type="tel" name="tel" class="form-control" placeholder="Enter Phone Number">
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" name="email" class="form-control" placeholder="Enter Email Address">
+						</div>	
+						<div class="form-group">
+							<label for="message">Message</label>
+							<textarea name="message" class="form-control" rows=4></textarea>
+						</div>	
+						<div class="alert alert-info"><p>You can also use the contact information in 
+							'About us' to contact us.</p></div>
+						<!-- Remember to change button type for 'Send' to 'submit' - for form -->
+						<button type="button" class="btn btn-primary">Send</button>		
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>			
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Join Modal -->
+	<div id="myt-join-modal" class="modal fade" tabindex="-1" role="dialog"
+		aria-labelledby="myt-join-modal-label" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myt-join-modal-label">
+						Join Melodi Ya Tshwane</h4>
+				</div>
+				<div class="modal-body">
+					<form method="post" role="Submit">
+						<div class="form-group">
+							<label for = "name">Name</label>
+							<input type="text" name="name" class="form-control" placeholder="Enter Full Name">
+						</div>
+						<div class="form-group">
+							<label for = "phone">Phone</label>
+							<input type="tel" name="tel" class="form-control" placeholder="Enter Phone Number">
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" name="email" class="form-control" placeholder="Enter Email Address">
+						</div>	
+						<!-- Remember to change button type for 'Join' to 'submit' - for form -->
+						<button type="button" class="btn btn-primary">Join</button>		
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>			
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Warning that this is just a demo website and not a live website -->
+	<div class="alert alert-warning container myt-cen-txt">
+		<p><strong>WARNING! THIS IS A DEMO WEBSITE!!</strong></p>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) Must be included before the .js bootstrap plugins -->
+	<script src="js/jquery-2.2.4.js"></script>
+	<!-- Include all compiled plugins (below->bootstrap.js) or include individual plugin files as needed -->
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
