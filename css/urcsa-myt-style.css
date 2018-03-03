@@ -1,0 +1,56 @@
+@CHARSET "UTF-8";
+/* MYT custom style sheet for non framework styles */
+
+/* align text to center - use Bootstrap 'center-block' for images */
+.myt-cen-txt{					
+	text-align: center;
+}
+/* align text to center - used with .myt-cen-txt on <div>
+   use Bootstrap 'center-block' for images! */
+.myt-cen-img{					
+	display:inline-block;
+}
+.myt-white-font{
+	color: #FFFFFF;	
+}
+footer > div {
+ 	background-color: #4E505D;	/* background color for page footer */
+	color: #FFFFFF; 			/* text color(White) for page footer */
+}
+footer a, footer a:visited {
+	color: #FFFFFF;				/* text color(White) for links in page footer */
+}
+footer a:hover {
+	color: #00FFFF;				/* text color(Aqua) for hovering and visiting links in page footer */
+}
+header .navbar-default{
+	background-color: #4E505D;
+  	border-color: #4E505D;
+}
+header .navbar-default .navbar-nav > li > a{
+	color: #FFFFFF;
+}
+header .navbar-default .navbar-nav > li > a:hover,
+header .navbar-default .navbar-nav > li > a:focus {
+  	color: #555;
+ 	background-color: #e7e7e7;
+}
+header .navbar-default .navbar-toggle .icon-bar {
+  	background-color: #e7e7e7
+}
+header .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+header .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+header .navbar-toggle{
+	float: none;		/* overwrite bootstrap nabar-toggle not to float to right */
+}
+header .navbar-toggle .icon-bar { 
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin-right: auto;	/* center the icon-bar  */
+  margin-left: auto;	/* center the icon-bar  */
+}
