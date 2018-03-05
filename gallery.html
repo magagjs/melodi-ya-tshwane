@@ -2,9 +2,36 @@
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Define website meta-data and SEO content below -->
+	<meta name="description" content="URCSA - Melodi Ya Tshwane Congregation website. Find MYT accouncements, 
+		events, contact information and join URCSA-Melodi Ya Tshwane">
+	<meta name="keywords" content="URCSA, Melodi Ya Tshwane, MYT">
+	<meta name="robots" content="index, follow">
+	<meta name="revisit-after" content="1 days">
+	<link href="https://magags.github.io/myt/" rel="canonical">
+	<!-- Open Graph Metadata for Social Media Optimisation -->
+	<meta property="og:url" content="https://magags.github.io/myt/"> 
+	<meta property="og:title" content="URCSA-Melodi Ya Tshwane Congregation website"> 
+	<meta property="og:site_name" content="URCSA-Melodi Ya Tshwane">
+	<meta property="og:description" content="View MYT accouncements, events, contact information and join 
+		URCSA-Melodi Ya Tshwane at https://magags.github.io/myt/"> 
+	<meta property="og:type" content="website"> 
+	<meta property="og:image:width" content="256"> 
+	<meta property="og:image:height" content="60"> 
+	<meta property="og:image:type" content="image/jpeg"> 
+	<meta property="og:image" content="https://magags.github.io/myt/assets/mytLogo_300x60.png">
+	<meta property="og:image:alt" content="A logo of URCSA - Melodi Ya Tshwane" />
+	<!-- Twitter Cards for Social Media Optimisation on Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@urcsamyt">
+	<meta name="twitter:creator" content="@urcsamyt">
+	<meta name="twitter:title" content="URCSA - Melodi Ya Tshwane Congregation website">
+	<meta name="twitter:description" content="View MYT accouncements, events, contact information and join 
+		URCSA-Melodi Ya Tshwane at https://magags.github.io/myt/">
+	<meta name="twitter:image" content="https://magags.github.io/myt/assets/mytLogo_300x60.png">
+	<meta name="twitter:image:alt" content="A logo of URCSA - Melodi Ya Tshwane">
 	
 	<title>Melodi Ya Tshwane-Gallery</title>
 	
@@ -21,20 +48,21 @@
 </head>
 <body>
 	<!-- Warning that this is just a demo website and not a live website -->
-	<div class="alert alert-warning container myt-cen-txt">
-		<p><strong>WARNING! THIS IS A DEMO WEBSITE!!</strong></p>
+	<div class="alert alert-warning container myt-cen-txt" role="alert" 
+		aria-labelledby="mytDemoWarning">
+		<p><strong><span id="mytDemoWarning">WARNING! THIS IS A DEMO WEBSITE!!</span></strong></p>
 	</div>
-	<header>	<!-- Header -->
+	<header role="header">	<!-- Header -->
 		<div class="container clearfix">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 role="logo"">
 					<a href="index.html">
 						<img alt="Picture of MYT URCSA logo" src="assets/mytLogo_300x60.png" 
-							class="img-responsive" role="logo">
+							class="img-responsive">
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 pull-right">
-						<form style="margin-top: 5px" action="" method="post" 
+						<form style="margin-top: 5px" action="index.html" method="post" 
 							role="search">
 							<div class="form-group has-feedback has-feedback-right">
 								<input type="search" name="search" class="form-control" placeholder="Search">
@@ -47,73 +75,93 @@
 		<div class="container clearfix"> <!-- Nav Container -->
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<nav class="navbar navbar-default" role="navigation">
+					<nav class="navbar navbar-default navbar-static-top" role="navigation">
 						<span class="sr-only">Top Navigation</span>
+						<div class="navbar-header">
 							<div class="myt-cen-txt">	<!-- center the navbar-toggle -->
 								<button type="button" class="navbar-toggle" data-toggle="collapse" 
-									data-target="#myt-navbar-collapse">
-									<div class="center-block">
+									data-target="#myt-navbar-collapse" role="button" 
+									arial-labelledby="navigationMenu">
 										<span class="sr-only">Toggle Top Navigation</span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
-										<span class="myt-white-font"><b>MENU</b></span>
-									</div>
+										<span class="myt-white-font" id="navigationMenu">
+											<b>MENU</b></span>
 								</button>
 							</div>
+						</div>
 						<div class="collapse navbar-collapse" id="myt-navbar-collapse">
-							<ul class="nav navbar-nav navbar-left">
-								<li><a href="index.html">Home</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">About us
+							<ul class="nav navbar-nav" role="menubar">
+								<li role="menuitem" aria-labelledby="homeLink"><a href="index.html" role="link">
+									<span id="homeLink">Home</span></a></li>
+								<li class="dropdown" role="menuitem" aria-labelledby="aboutUsLabel" aria-haspopup="true">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<span id="aboutUsLabel">About us</span>
 										<b class="caret"></b>
 									</a>
-									<ul class="dropdown-menu">
-										<li><a href="#">History</a></li>
-										<li><a href="#">Vision</a></li>
-										<li><a href="#">Reverend</a></li>
+									<ul class="dropdown-menu" role="menu">
+										<li role="menuitem"><a href="#" role="link" aria-labelledby="historyLink">
+											<span id="historyLink">History</span></a></li>
+										<li role="menuitem"><a href="#" role="link" aria-labelledby="visionLink">
+											<span id="visionLink">Vision</span></a></li>
+										<li role="menuitem"><a href="#" role="link" aria-labelledby="reverendLink">
+											<span id="reverendLink">Reverend</span></a></li>
 									</ul>
 								</li>
-								<li><a href="#">Announcements</a></li>
-								<li><a href="#">Events</a></li>
-								<li><a href="#">Gallery</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Congregation
+								<li role="menuitem">
+									<a href="#" role="link" aria-labelledby="announcementLink">
+										<span id="announcementLink">Announcements</span></a></li>
+								<li role="menuitem">
+									<a href="#" role="link" aria-labelledby="eventsLink">
+										<span id="eventsLink">Events</span></a></li>
+								<li role="menuitem" aria-labelledby="homeLink">
+									<a href="gallery.html" role="link" aria-labelledby="galleryLink">
+										<span id="galleryLink">Gallery</span></a></li>
+								<li class="dropdown" role="menu">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+										role="link" aria-labelledby="congregationLabel">
+											<span id="congregationLabel">Congregation</span>
 										<b class="caret"></b>
 									</a>
-									<ul class="dropdown-menu">
-										<li><a href="#">Ministries</a></li>
-										<li><a href="#">Committees</a></li>
-										<li><a href="#">Sunday School</a></li>
+									<ul class="dropdown-menu" role="menu">
+										<li role="menuitem"><a href="#" role="link" aria-labelledby="ministriesLink">
+											<span id="ministriesLink">Ministries</span></a></li>
+										<li role="menuitem"><a href="#" role="link" aria-labelledby="committeesLink">
+											<span id="committeesLink">Committees</span></a></li>
+										<li role="menuitem"><a href="#" role="link" aria-labelledby="sundaySchoolLink">
+											<span id="sundaySchoolLink">Sunday School</span></a></li>
 									</ul>
 								</li>
-								<li><a href="#">Donations</a></li>
-								<li><a href="#" data-toggle="modal" 
-									data-target="#myt-contact-modal">Contact us</a></li>
+								<li role="menuitem"><a href="#" role="link" aria-labelledby="donationsLink">
+									<span id="donationsLink">Donations</span></a></li>
+								<li role="menuitem"><a href="#" data-toggle="modal" 
+									data-target="#mytContactModal" role="link" aria-labelledby="contactUsLink">
+										<span id="contactUsLink">Contact us</a></li>
 							</ul>
 						</div>
 					</nav>  
 				</div>
 			</div>
-		</div>					<!-- End Nav Container -->
-	</header>					<!-- End Header -->
-	<div class="container">		<!-- Main Body Container -->
+		</div>		<!-- End Nav Container -->
+	</header>		<!-- End Header -->
+	<article class="container" role="main">		<!-- Main Body Container -->
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<article>
-					<h1><span class="glyphicon glyphicon-camera"></span>&nbsp;Melodi Ya Tshwane Gallery</h1>
-					<section>
+				<h2><span class="glyphicon glyphicon-camera"></span>&nbsp;Melodi Ya Tshwane Gallery</h2>
+				<section role="region">
+					<div>
 						<!-- LightWidget WIDGET [For Instagram] -->
 						<script src="//lightwidget.com/widgets/lightwidget.js"></script>
 						<iframe src="//lightwidget.com/widgets/6d5608216c9a5300a12fe3dfd937e1d9.html" scrolling="yes" 
 								allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;">
 						</iframe>
-					</section>
-				</article>
+					</div>
+				</section>
 			</div>
 		</div>
-	</div>		<!-- End Main Body Container -->
-	<footer>	<!-- Footer -->
+	</article>		<!-- End Main Body Container -->
+	<footer role="contentinfo">	<!-- Footer -->
 		<div class="container">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
@@ -148,50 +196,50 @@
 					<p><a href="http://urcsa.net/" target="_blank">Affilations</a></p>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 myt-cen-txt">
-					<p>
-						<span class="glyphicon glyphicon-phone">&nbsp;</span>
+					<p><span class="glyphicon glyphicon-phone">&nbsp;</span>
 						<a href="#" target="_blank">Download our mobile App</a></p>
 					<p><a href="#" target="_blank"><img class="img-responsive center-block" 
-						src="assets/googlePlayBadge320x200.png"></img></a></p>
+						src="assets/googlePlayBadge320x200.png" alt="Google Play badge, 
+							black with transparent background and contains Google Play logo 
+							and the the words: GET IT ON GOOLGLE PLAY"/></a></p>
 				</div>
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
-				<p>
-					Copyright &copy; URCSA Melodi Ya Tshwane 2018 | Website developed by 
-					<a href="#" target="_blank">__</a>
+				<p>Copyright &copy; URCSA Melodi Ya Tshwane 2018 | Website developed by
+					<a rel="author" href="#" target="_blank">__</a>
 				</p>
 			</div>
 		</div>
 	</footer>	<!-- End Footer -->
 	
-	<!-- Contact us Modal -->
-	<div id="myt-contact-modal" class="modal fade" tabindex="-1" role="dialog"
-		aria-labelledby="myt-contact-modal-label" aria-hidden="true">
+	<!-- 'Contact us' Modal -->
+	<div id="mytContactModal" class="modal fade" tabindex="-1" role="dialog"
+		aria-labelledby="mytContactModal" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"
 						aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myt-contact-modal-label">
+					<h4 class="modal-title" id="mytContactModal">
 						Contact Melodi Ya Tshwane</h4>
 				</div>
-				<div class="modal-body">
-					<form method="post" role="Submit">
+				<div class="modal-body" id="mytContactForm">
+					<form method="post" role="form" aria-lebelledby="mytContactForm">
 						<div class="form-group">
-							<label for = "name">Name</label>
+							<label>Name</label>
 							<input type="text" class="form-control" placeholder="Enter Full Name">
 						</div>
 						<div class="form-group">
-							<label for = "phone">Phone</label>
+							<label>Phone</label>
 							<input type="tel" name="tel" class="form-control" placeholder="Enter Phone Number">
 						</div>
 						<div class="form-group">
-							<label for="email">Email</label>
+							<label>Email</label>
 							<input type="email" name="email" class="form-control" placeholder="Enter Email Address">
 						</div>	
 						<div class="form-group">
-							<label for="message">Message</label>
-							<textarea name="message" class="form-control" rows=4></textarea>
+							<label>Message</label>
+							<textarea name="message" class="form-control" rows="4" aria-multiline="true"></textarea>
 						</div>	
 						<div class="alert alert-info"><p>You can also use the contact information in 
 							'About us' to contact us.</p></div>
@@ -202,11 +250,12 @@
 				</div>
 			</div>
 		</div>
-	</div>	<!-- End Ccontact us Modal -->
+	</div>				<!-- End 'Contact us' Modal -->
 	
 	<!-- Warning that this is just a demo website and not a live website -->
-	<div class="alert alert-warning container myt-cen-txt">
-		<p><strong>WARNING! THIS IS A DEMO WEBSITE!!</strong></p>
+	<div class="alert alert-warning container myt-cen-txt" role="alert" 
+		aria-labelledby="mytDemoWarningBottom">
+		<p><strong><span id="mytDemoWarningBottom">WARNING! THIS IS A DEMO WEBSITE!!</span></strong></p>
 	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) Must be included before the .js bootstrap plugins -->
