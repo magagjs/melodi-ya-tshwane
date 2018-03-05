@@ -5,8 +5,7 @@
 .myt-cen-txt{					
 	text-align: center;
 }
-/* align text to center - used with .myt-cen-txt on <div>
-   use Bootstrap 'center-block' for images! */
+/* align text to center - used with .myt-cen-txt on <div>, use Bootstrap 'center-block' for images! */
 .myt-cen-img{					
 	display:inline-block;
 }
@@ -40,11 +39,11 @@ header .navbar-default .navbar-toggle .icon-bar {
 }
 header .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 header .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #555;
+    color: #FFFFFF;
     background-color: #e7e7e7;
 }
 header .navbar-toggle{
-	float: none;		/* overwrite bootstrap nabar-toggle not to float to right */
+	float: none;		/* overwrite bootstrap navbar-toggle not to float to right */
 }
 header .navbar-toggle .icon-bar { 
   display: block;
@@ -53,4 +52,27 @@ header .navbar-toggle .icon-bar {
   border-radius: 1px;
   margin-right: auto;	/* center the icon-bar  */
   margin-left: auto;	/* center the icon-bar  */
+}
+/* change styles of drop-down links in header for medium, small and extra small devices */
+@media (max-width: 767px) {	
+  header .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #FFFFFF;				/* text color: white */
+  }
+  header .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  header .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #FFFFFF;				
+    background-color: #e7e7e7;	/* background-color: grey */
+  }
+  header .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  header .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  header .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #FFFFFF;
+    background-color: #e7e7e7;
+  }
+  header .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  header .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  header .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
 }
