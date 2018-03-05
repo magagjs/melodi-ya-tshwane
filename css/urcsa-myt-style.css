@@ -24,7 +24,7 @@ footer a:hover {
 }
 header .navbar-default{
 	background-color: #4E505D;
-  	border-color: #4E505D;
+/*   	border-color: #4E505D; */
 }
 header .navbar-default .navbar-nav > li > a{
 	color: #FFFFFF;
