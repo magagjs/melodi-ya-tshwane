@@ -12,14 +12,15 @@
 	-webkit-opacity: 0.9;
 	transform: scale(1.3);
 }
-/* align text to center - use Bootstrap 'center-block' for images */
+#instafeed-btn button{		/* for 'See More' button */
+	margin-bottom: 5px;		/* place button not to close to footer */
+	text-align: center;		/* center button on page */
+}
+/* align text to center-use Bootstrap 'center-block' for <img> */
 .myt-cen-txt{					
 	text-align: center;
 }
-/* align text to center - used with .myt-cen-txt on <div>, use Bootstrap 'center-block' for images! */
-.myt-cen-img{					
-	display:inline-block;
-}
+
 .myt-white-font{
 	color: #FFFFFF;	
 }
