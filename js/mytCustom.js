@@ -9,23 +9,41 @@ document.addEventListener("DOMContentLoaded", function() {
 	    clientId: 'c400f2940c624504a67b87ad2159d976',
 		accessToken: '3991179505.1677ed0.bb3a32b98f384983bfaac7340fec426e',
 		target:  'instafeed',
-		template: '<div class="col-lg-3 myt-gallery"><a href="{{image}}" title="{{caption}}" target="_blank">'+
+		template: '<div class="col-lg-3 col-md-4 col-sm-5 col-xs-5 myt-gallery">'+
+				  '<a href="{{image}}" title="{{caption}}" target="_blank">'+
 				  '<img src="{{image}}" alt="{{caption}}" keywords=""class="img-responsive"/></a>'+
 				  '<p>{{caption}}</p></div>',
+				  
+		// load only photos from Instagram for the feed - no videos
+		filter: function(image){
+			return image.type == 'image';
+		},		  
 		
-		// disable feed load button when feed has no more images
+		// process the following function after every time 'userFeed' function runs
 		after: function () {
-			instaLoadButton.stye.display = 'none';
-			if(!this.hasNext()) {
-				instaLoadButton.setAttribute('disabled', 'disabled');	
+			instaLoadButton.removeAttribute('disabled');
+			instaLoadButton.innerHTML="See More"; 
+			if(!this.hasNext()) {	
+				instaLoadButton.style.display = 'none';		// remove feed load button when feed has no more images
+				// add alert message to the parent instafeed <div> when feed has no more images
+				document.getElementById("insta-feed-alert").appendChild(infoAlertDiv);	//Add below all the images	
 			}
 		}
 	});
 	
-	var instaLoadButton = document.getElementById("load-feed-btn"),	// get button to load more feeds by ID
-		instLoadDiv = document.getElementById("instafeed");			// get the <div> container of feed images by ID
+	var instaLoadButton = document.getElementById("load-feed-btn");		// get button by ID to load more feeds
+	var	instaLoadDiv = document.getElementById("instafeed");			// get <div> by ID container of feed images	
+	var infoAlertDiv = document.createElement("DIV");					// create <div> to set alert classes when feed has no more images
+	infoAlertDiv.setAttribute('class', 'alert alert-info myt-cen-txt');	// insert classes 'alert alert-info' to <div> 'infoAlertDiv'
+	var infoAlertPara = document.createElement("P");					// create <p> to display info message when feed has no more images
+	var infoMsg = document.											
+		createTextNode("There are no more images to display!");	// create text message for info alert	
+	infoAlertPara.appendChild(infoMsg);							// add text message for info alert to <p>		
+	infoAlertDiv.appendChild(infoAlertPara);					// add the <p> text to the alert <div>
 	
-	instaLoadButton.addEventListener("click", function() {			// function to load next feed images
+	instaLoadButton.addEventListener("click", function() {		// function to load next feed images on button click	
+		instaLoadButton.innerHTML="Loading..."; 				// change button text to 'Loading' on click
+		instaLoadButton.setAttribute('disabled', 'disabled'); 	// disable feed load button on click until after userFeed runs
 		userFeed.next();
 	})
 	

@@ -55,7 +55,9 @@
 .mfp-ajax-cur {
   cursor: progress; }
 
-.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+/* MYT Changes: Don't Change cursor on close hover - so remove '.mfp-close' */
+/* .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close { */
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder {
   cursor: -moz-zoom-out;
   cursor: -webkit-zoom-out;
   cursor: zoom-out; }
@@ -107,7 +109,7 @@
 button.mfp-close,
 button.mfp-arrow {
   overflow: visible;
-  cursor: pointer;
+  cursor: pointer;	
   background: transparent;
   border: 0;
   -webkit-appearance: none;
