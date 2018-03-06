@@ -39,13 +39,23 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<!-- URCSA Melodi Ya Tshwane Custom Stylesheet -->
 	<link href="css/urcsa-myt-style.css" rel="stylesheet">	
+	<!-- Magnific-popup stylesheet for adding image popup slider for Instagram gallery -->
+	<link href="css/magnific-popup.css" rel="stylesheet">
 		
    	<!-- The following is used to enable IE versions lower than version 9 to support HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-</head>
+    
+    <!-- Instafeed.js script for Instagram feed -->
+    <script src="js/instafeed.min.js" type="text/javascript"></script>
+    <!-- jQuery (required for below JavaScript files and Bootstrap) Must be included before the .js files -->
+	<script src="js/jquery-2.2.4.js"></script>
+	<script src="js/mytCustom.js" type="text/javascript"></script>
+    <!-- Magnific-popup javascript for adding image popup slider for Instagram gallery -->
+     <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+</head>	
 <body>
 	<!-- Warning that this is just a demo website and not a live website -->
 	<div class="alert alert-warning container myt-cen-txt" role="alert" 
@@ -145,18 +155,13 @@
 	</header>		<!-- End Header -->
 	<article class="container" role="main">		<!-- Main Body Container -->
 		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<!-- 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> -->
 				<h2><span class="glyphicon glyphicon-camera"></span>&nbsp;Melodi Ya Tshwane Gallery</h2>
 				<section role="region">
-					<div>
-						<!-- LightWidget WIDGET [For Instagram] -->
-						<script src="//lightwidget.com/widgets/lightwidget.js"></script>
-						<iframe src="//lightwidget.com/widgets/6d5608216c9a5300a12fe3dfd937e1d9.html"
-								 class="lightwidget-widget" style="width: 100%; border: 0; overflow-y: hidden;">
-						</iframe>
+					<div id="instafeed" class="myt-gallery">
 					</div>
 				</section>
-			</div>
+<!-- 			</div> -->
 		</div>
 	</article>		<!-- End Main Body Container -->
 	<footer role="contentinfo">	<!-- Footer -->
@@ -256,8 +261,6 @@
 		<p><strong><span id="mytDemoWarningBottom">WARNING! THIS IS A DEMO WEBSITE!!</span></strong></p>
 	</div>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) Must be included before the .js bootstrap plugins -->
-	<script src="js/jquery-2.2.4.js"></script>
 	<!-- Include all compiled plugins (below->bootstrap.js) or include individual plugin files as needed -->
 	<script src="js/bootstrap.js"></script>
 </body>
