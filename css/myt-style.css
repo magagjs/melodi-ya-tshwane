@@ -1,29 +1,29 @@
 @charset "utf-8";
-/* MYT custom style sheet for non framework styles */
+/*==============================================================================================
+ 						URCSA Melodi Ya Tshwane custom style-sheet
+ ===============================================================================================*/
 
-/* style the instafeed div - For Instgram feed */
-#instafeed img{
-	padding: 10px;
-}
-#instafeed img:hover{
-	opacity: 0.9;
-	filter: alpha(opacity=90);
-	-moz-opacity: 0.9;
-	-webkit-opacity: 0.9;
-	transform: scale(1.3);
-}
-#instafeed-btn button{		/* for 'See More' button */
-	margin-bottom: 5px;		/* place button not to close to footer */
-	text-align: center;		/* center button on page */
-}
-/* align text to center-use Bootstrap 'center-block' for <img> */
+/*==============================
+1. Font and Alignment
+================================*/
+
 .myt-cen-txt{					
-	text-align: center;
+	text-align: center;	/* align text to center-use Bootstrap 'center-block' for <img> */
 }
 
-.myt-white-font{
-	color: #FFFFFF;	
+.myt-white-font{	
+	color: #FFFFFF;		/* white font on black backgrounds */
 }
+
+/*==============================
+2. Grid and Layout
+================================*/
+
+
+/*==============================
+3. Header and Footer
+================================*/
+
 footer > div {
  	background-color: #4E505D;	/* background color for page footer */
 	color: #FFFFFF; 			/* text color(White) for page footer */
@@ -32,7 +32,7 @@ footer a, footer a:visited {
 	color: #FFFFFF;				/* text color(White) for links in page footer */
 }
 footer a:hover {
-	color: #00FFFF;				/* text color(Aqua) for hovering and visiting links in page footer */
+	color: #00FFFF;				/* text color(Aqua) for links in page footer */
 }
 header .navbar-default{
 	background-color: #4E505D;
@@ -65,6 +65,7 @@ header .navbar-toggle .icon-bar {
   margin-right: auto;	/* center the icon-bar  */
   margin-left: auto;	/* center the icon-bar  */
 }
+
 /* change styles of drop-down links in header for medium, small and extra small devices */
 @media (max-width: 767px) {	
   header .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -88,3 +89,46 @@ header .navbar-toggle .icon-bar {
     background-color: transparent;
   }
 }
+
+/*==============================
+Animation and Popups
+================================*/
+.scrollIcon{			 /* used camelCase for jQuery 'animate()' */
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	bottom: 0px;	  	 /* place icon at bottom of page */
+	right: 20px;	  	 /* place icon on right side of page */
+	background: #4E505D; /* dark grey background*/
+}
+
+a.scrollIcon i {
+	margin-top: 10px;
+	color: #FFFFFF;
+}
+
+a.scrollIcon {
+	text-align: center;
+}
+
+
+/*==============================
+Plugins, iFrames and Widgets
+================================*/
+
+/* style the instafeed div - For Instagram feed */
+#instafeed img{
+	padding: 10px;
+}
+#instafeed img:hover{
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	-moz-opacity: 0.9;
+	-webkit-opacity: 0.9;
+	transform: scale(1.3);
+}
+#instafeed-btn button{		/* for 'See More' button */
+	margin-bottom: 5px;		/* place button not to close to footer */
+	text-align: center;		/* center button on page */
+}
+
