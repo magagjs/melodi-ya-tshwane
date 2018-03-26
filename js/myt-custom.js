@@ -13,5 +13,26 @@ $(document).ready(function() {
 		$("html, body").animate({ scrollTop: 0 }, 1000); //perform the smooth scroll animation
 			return false;
 	});
+    
+	// function to resize potrait and landscape images to have same height
+	// make landscape images have same width and height:WARNING - will lose aspect-ratio
+//	(function($) {
+//		
+//		$.fn.resizeImg = function() {
+//			var $target = $('img');					  	  // target <img> elements
+//			$target.each(function(){	  		  		  // for each <img> element
+//				var widthSize = $(this).parent().width(); // get width of parent element of <img>
+//				if($(this).width() > $(this).height())	  // landscape images have smaller height than width
+//					$(this).css('max-height',widthSize);  // give same height was parent element	
+//			});
+//			
+//			return this;
+//		};
+//	}( jQuery ));
+//	
+//	load function only on elements with #instafeed id - Instagram feed <div>
+//	$('#instafeed').resizeImg();
 	
 });
+	
+

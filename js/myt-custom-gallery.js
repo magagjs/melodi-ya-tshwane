@@ -10,14 +10,15 @@ $(document).ready(function() {
 	    clientId: 'c400f2940c624504a67b87ad2159d976',
 		accessToken: '3991179505.1677ed0.bb3a32b98f384983bfaac7340fec426e',
 		target:  'instafeed',
-		template: '<div class="col-lg-3 col-md-4 col-sm-5 col-xs-5 myt-gallery">'+
+		orientation: 'potrait',
+		template: '<div class="col-lg-3 col-md-4 col-sm-5 col-xs-5">'+
 				  '<a href="{{image}}" title="{{caption}}" target="_blank">'+
-				  '<img src="{{image}}" alt="{{caption}}" keywords=""class="img-responsive"/></a>'+
+				  '<img src="{{image}}" alt="{{caption}}" class="img-responsive"></a>'+
 				  '<p>{{caption}}</p></div>',
 				  
 		// load only photos from Instagram for the feed - no videos
 		filter: function(image){
-			return image.type == 'image';
+			return image.type == 'image'; // && image.orientation == 'square';
 		},		  
 		
 		// process the following function after every time 'userFeed' function runs
@@ -54,7 +55,7 @@ $(document).ready(function() {
 	userFeed.run();
 	
 	// this will create a single gallery from all elements that have class "myt-gallery"
-	$('.myt-gallery').magnificPopup({
+	$('#instafeed').magnificPopup({
 	  type: 'image',
 	  delegate: 'a',	// target anchor <a> tag
 	  gallery:{
