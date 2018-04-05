@@ -54,7 +54,7 @@ $(document).ready(function() {
 	
 	userFeed.run();
 	
-	// this will create a single gallery from all elements that have class "myt-gallery"
+	// this will create a single gallery from all elements that have class "instafeed"
 	$('#instafeed').magnificPopup({
 	  type: 'image',
 	  delegate: 'a',	// target anchor <a> tag

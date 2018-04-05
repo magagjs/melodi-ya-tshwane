@@ -4,8 +4,29 @@
  ===============================================================================================*/
 
 /*==============================
-1. Font and Alignment
+1. Font, Content and Alignment
 ================================*/
+/* Google font to be used throughout site body */
+body{
+	font-family: 'PT Serif', serif;
+	font-size: 16px;
+}
+
+/* Google font to be used throughout site headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6{
+	font-family: 'Raleway', sans-serif;
+}
 
 .myt-cen-txt{					
 	text-align: center;	/* align text to center-use Bootstrap 'center-block' for <img> */
@@ -15,48 +36,126 @@
 	color: #FFFFFF;		/* white font on black backgrounds */
 }
 
+abbr[title]{
+	border: none;			/* no underline for abbreviations */
+	text-decoration: none;	/* no underline for abbreviations */
+	cursor: auto;			/* remove default help cursor */
+}
+
+abbr:hover, 
+abbr:active, 
+abbr:focus {
+	content: attr(title);	/* abbr title content as tooltip */
+}
+
+@media (max-width: 767px){
+	article abbr:hover, 
+	article abbr:active, 
+	article abbr:focus {
+		content: attr(title);	/* abbr title content as tooltip */
+	}
+}
+
+p[title="Choir itunes"] > a {
+	color: inherit;				/* use default body color on iTunes link */
+}
+
+p[title="Choir itunes"] > a:visited {
+	color: inherit;				/* use default body color on visited iTunes link */
+	border: none;				
+}
+
+p[title="Choir itunes"] > a:hover,
+p[title="Choir itunes"] > a:focus {
+	color: inherit;				/* use default body color on visited iTunes link */
+}
+
 /*==============================
 2. Grid and Layout
 ================================*/
+/* header must not hide main content */
+.main-body{
+	margin-top: 58px;
+}
+/* header must not hide main content in small devices*/
+@media (max-width: 767px){
+	.main-body{
+		margin-top: 58px;
+	}
+}
 
 
 /*==============================
 3. Header and Footer
 ================================*/
+footer {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 footer > div {
  	background-color: #4E505D;	/* background color for page footer */
 	color: #FFFFFF; 			/* text color(White) for page footer */
 }
+
 footer a, footer a:visited {
 	color: #FFFFFF;				/* text color(White) for links in page footer */
+	border: none;
 }
+
 footer a:hover {
 	color: #00FFFF;				/* text color(Aqua) for links in page footer */
 }
-header .navbar-default{
-	background-color: #4E505D;
-/*   	border-color: #4E505D; */
+
+header{
+	top: 0;						/* header must not hide main content */		
+	padding: 10px;
 }
+
+header .navbar-default{
+	background-color: #4E505D;	/* navbar color */
+}
+
+/* first level navbar links: default display */
 header .navbar-default .navbar-nav > li > a{
 	color: #FFFFFF;
 }
+
+/* first level navbar links: hover display */
 header .navbar-default .navbar-nav > li > a:hover,
 header .navbar-default .navbar-nav > li > a:focus {
-  	color: #555;
- 	background-color: #e7e7e7;
+  	color: #00FFFF;
 }
+
+/* first level navbar links: display after hover */
+header .navbar-default .navbar-nav > li > a:hover::after,
+header .navbar-default .navbar-nav > li > a:focus::after {
+  	color: #FFFFFF;
+}
+
 header .navbar-default .navbar-toggle .icon-bar {
-  	background-color: #e7e7e7
+  	background-color: #e7e7e7;
 }
+
+/* first level open navbar links */
+header .navbar-default .navbar-nav > .open > a,
+header .navbar-default .navbar-nav > .open > a:hover,
+header .navbar-default .navbar-nav > .open > a:focus {
+  color: #00FFFF;
+  background-color: #4E505D;
+}
+
+/* last level open navbar links */
 header .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 header .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #FFFFFF;
-    background-color: #e7e7e7;
+    background-color: #4E505D;
 }
+
 header .navbar-toggle{
 	float: none;		/* overwrite bootstrap navbar-toggle not to float to right */
 }
+
 header .navbar-toggle .icon-bar { 
   display: block;
   width: 22px;
@@ -67,37 +166,54 @@ header .navbar-toggle .icon-bar {
 }
 
 /* change styles of drop-down links in header for medium, small and extra small devices */
-@media (max-width: 767px) {	
-  header .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #FFFFFF;				/* text color: white */
-  }
-  header .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  header .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #FFFFFF;				
-    background-color: #e7e7e7;	/* background-color: grey */
-  }
-  header .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  header .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  header .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #FFFFFF;
-    background-color: #e7e7e7;
-  }
-  header .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
-  header .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  header .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #ccc;
-    background-color: transparent;
-  }
+@media (max-width: 767px) {
+	/* first level navbar links: default display */
+	header .navbar-default .navbar-nav > li > a{
+		color: #FFFFFF;			
+	}
+	
+	/* first level navbar links: hover display */
+	header .navbar-default .navbar-nav > li > a:hover,
+	header .navbar-default .navbar-nav > li > a:focus {
+	  	color: #00FFFF;			
+	}
+	
+	/* first level navbar links: display after hover */
+	header .navbar-default .navbar-nav > li > a:hover::after,
+	header .navbar-default .navbar-nav > li > a:focus::after {
+	  	color: #FFFFFF;
+	}
+	
+	/* first level open navbar links */
+	header .navbar-default .navbar-nav > .open > a,
+	header .navbar-default .navbar-nav > .open > a:hover,
+	header .navbar-default .navbar-nav > .open > a:focus {
+	  color: #00FFFF;
+	  background-color: #4E505D;
+	}
+	
+	/* second level open navbar links */
+	header .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	  color: #FFFFFF;				
+	}
+	
+	/* last level open navbar links */
+	header .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	header .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	    color: #4E505D;
+	    background-color: #FFFFFF;
+	}
+	
 }
 
-/*==============================
-Animation and Popups
-================================*/
+/*================================
+4. Animation and Popups: ScrollIcon
+==================================*/
 .scrollIcon{			 /* used camelCase for jQuery 'animate()' */
 	position: fixed;
 	width: 30px;
 	height: 30px;
-	bottom: 0px;	  	 /* place icon at bottom of page */
+	bottom: 20px;	  	 /* place icon at bottom of page */
 	right: 20px;	  	 /* place icon on right side of page */
 	background: #4E505D; /* dark grey background*/
 }
@@ -111,15 +227,107 @@ a.scrollIcon {
 	text-align: center;
 }
 
+/*=================================
+5. Animation and Popups: Navbar
+===================================*/
+.animated {
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    -o-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    will-change: transform, opacity
+}
+
+@-webkit-keyframes fall-in {
+    0% {-webkit-transform: perspective(400px) rotateX(-90deg);}
+    
+    100% {-webkit-transform: perspective(400px) rotateX(0deg);}
+}
+
+@-moz-keyframes fall-in {
+    0% {-moz-transform: perspective(400px) rotateX(-90deg);}
+
+    100% {-moz-transform: perspective(400px) rotateX(0deg);}
+}
+
+@-o-keyframes fall-in {
+    0% {-o-transform: perspective(400px) rotateX(-90deg);}
+    
+    100% {-o-transform: perspective(400px) rotateX(0deg);}
+}
+
+@keyframes fall-in {
+    0% {transform: perspective(400px) rotateX(-90deg);}
+    
+    100% {transform: perspective(400px) rotateX(0deg);}
+}
+
+.animated.fall-in {
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  -ie-transform-origin: top;
+  -o-transform-origin: top;
+  transform-origin: top;
+  
+  -webkit-backface-visibility: visible !important;
+  -webkit-animation-name: fall-in;
+  -moz-backface-visibility: visible !important;
+  -moz-animation-name: fall-in;
+  -o-backface-visibility: visible !important;
+  -o-animation-name: fall-in;
+  backface-visibility: visible !important;
+  animation-name: fall-in;
+}
+
+@-webkit-keyframes fall-out {
+    0% {-webkit-transform: perspective(400px) rotateX(0deg);}
+    
+  	100% {-webkit-transform: perspective(400px) rotateX(-90deg);}
+}
+
+@-moz-keyframes fall-out {
+    0% {-moz-transform: perspective(400px) rotateX(0deg);}
+    
+  	100% {-moz-transform: perspective(400px) rotateX(-90deg);}
+}
+
+@-o-keyframes fall-out {
+    0% {-o-transform: perspective(400px) rotateX(0deg);}
+    
+  	100% {-o-transform: perspective(400px) rotateX(-90deg);}
+}
+
+@keyframes fall-out {
+    0% {transform: perspective(400px) rotateX(0deg);}
+    
+  	100% {transform: perspective(400px) rotateX(-90deg);}
+}
+
+.animated.fall-out {
+  -webkit-transform-origin: top;
+  -webkit-animation-name: fall-out;
+  -webkit-backface-visibility: visible !important;
+  -moz-animation-name: fall-out;
+  -moz-backface-visibility: visible !important;
+  -o-animation-name: fall-out;
+  -o-backface-visibility: visible !important;
+  animation-name: fall-out;
+  backface-visibility: visible !important;
+}
+
 
 /*==============================
 Plugins, iFrames and Widgets
 ================================*/
 
 /* style the instafeed div - For Instagram feed */
-#instafeed img{
-	padding: 10px;
-}
+/* #instafeed img{ */
+/* 	max-height: 100%; */
+/* } */
 #instafeed img:hover{
 	opacity: 0.9;
 	filter: alpha(opacity=90);
@@ -128,7 +336,7 @@ Plugins, iFrames and Widgets
 	transform: scale(1.3);
 }
 #instafeed-btn button{		/* for 'See More' button */
-	margin-bottom: 5px;		/* place button not to close to footer */
+	margin-bottom: 5px;		/* place button not too close to footer */
 	text-align: center;		/* center button on page */
 }
 

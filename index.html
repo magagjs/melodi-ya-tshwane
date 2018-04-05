@@ -44,15 +44,16 @@
 	<meta name="twitter:image:alt" content="A logo of URCSA - Melodi Ya Tshwane">
 		
 	<title>Melodi Ya Tshwane|Home</title>
-		
-	<link href="css/bootstrap.css" rel="stylesheet">	  <!-- Bootstrap v3.3.7-->
-	<link href="css/myt-style.css" rel="stylesheet">	  <!-- URCSA Melodi Ya Tshwane Custom Stylesheet -->
-	<link href="css/magnific-popup.css" rel="stylesheet"> <!-- Magnific-popup stylesheet adding image slider -->
-		
+				
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" >	
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet"> 		<!-- Google font 'PT Serif' -->  
+	<link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet"> 		<!-- Google font 'Raleway bold 700' -->
+	<link href="css/myt-style.css" rel="stylesheet">	  	<!-- URCSA Melodi Ya Tshwane Custom Stylesheet -->
+	
    	<!-- Enable HTML5 and media queries support on IE versions lower than 9 -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.min.js"></script>
-      <script src="js/respond.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
     <!-- Add video support for Flash Player as a fallback to HTML5 <video> -->
@@ -60,51 +61,25 @@
 	<script src="js/swfobject.js"></script>
 </head>
 <body id="myt-Top-Page" data-spy="scroll" data-target=".navbar">
-	<!-- Warning that this is just a demo website and not a live website -->
-	<div class="alert alert-warning container myt-cen-txt" role="alert" 
-		aria-labelledby="myt-demo-warning">
-		<p><strong><span id="myt-demo-warning">WARNING! THIS IS A DEMO WEBSITE!!</span></strong></p>
-	</div>
 	<header role="banner">	<!-- Header Section -->
-		<div class="container clearfix">
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<a href="index.html">
-						<img alt="Picture of MYT URCSA logo" src="assets/mytLogo_300x60.png" 
-							class="img-responsive">
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 pull-right">
-						<form style="margin-top: 5px" action="index.html" method="post" 
-							role="search">
-							<div class="form-group has-feedback has-feedback-right">
-								<input type="search" name="search" class="form-control" placeholder="Search">
-								<i class="glyphicon glyphicon-search form-control-feedback"></i>
-							</div>
-						</form>
-				</div>
-			</div>
-		</div>
-		<div class="container clearfix"> <!-- Nav Container -->
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<nav class="navbar navbar-default navbar-static-top" role="navigation">
-						<span class="sr-only">Top Navigation</span>
-						<div class="navbar-header">
-							<div class="myt-cen-txt">	<!-- center the navbar-toggle -->
-								<button type="button" class="navbar-toggle" data-toggle="collapse" 
-									data-target="#myt-navbar-collapse" role="button">
-										<span class="sr-only">Toggle Top Navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="myt-white-font"><b>MENU</b></span>
-								</button>
-							</div>
+		<nav class="navbar navbar-default navbar-fixed-top animated" role="navigation">	<!-- Nav Section -->
+			<div class="container clearfix"> 	<!-- Nav Container -->
+				<div id="nav-row" class="row">	<!-- Nav Row -->
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">	<!-- Nav Column -->
+						<div class="navbar-header myt-cen-txt">
+							<span class="sr-only">Top Navigation</span>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" 
+								data-target="#myt-navbar-collapse" role="button">
+									<span class="sr-only">Toggle Top Navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="myt-white-font"><b>MENU</b></span>
+							</button>
 						</div>
 						<div class="collapse navbar-collapse" id="myt-navbar-collapse">
 							<ul class="nav navbar-nav" role="menubar">
-								<li role="menuitem" aria-labelledby="homeLink"><a href="index.html" role="link">
+								<li class="active" role="menuitem" aria-labelledby="homeLink"><a href="index.html" role="link">
 									<span id="homeLink">Home</span></a></li>
 								<li class="dropdown" role="menuitem" aria-labelledby="about-us-label" aria-haspopup="true">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -120,12 +95,6 @@
 											<span id="reverend-link">Reverend</span></a></li>
 									</ul>
 								</li>
-								<li role="menuitem">
-									<a href="#" role="link" aria-labelledby="announcement-link">
-										<span id="announcement-link">Announcements</span></a></li>
-								<li role="menuitem">
-									<a href="#" role="link" aria-labelledby="events-link">
-										<span id="events-link">Events</span></a></li>
 								<li role="menuitem" aria-labelledby="homeLink">
 									<a href="gallery.html" role="link" aria-labelledby="gallery-link">
 										<span id="gallery-link">Gallery</span></a></li>
@@ -141,7 +110,7 @@
 											<span id="cmm-link">CMM</span></a></li>
 										<li role="menuitem"><a href="#" role="link" aria-labelledby="cym-link">
 											<span id="cym-link">CYM</span></a></li>
-										<li role="menuitem"><a href="#" role="link" aria-labelledby="choir-link">
+										<li role="menuitem"><a href="choir.html" role="link" aria-labelledby="choir-link">
 											<span id="choir-link">Choir</span></a></li>
 										<li role="menuitem"><a href="#" role="link" aria-labelledby="myt-youth-link">
 											<span id="myt-youth-link">MYT Youth</span></a></li>
@@ -154,6 +123,10 @@
 										<b class="caret"></b>
 									</a>
 									<ul class="dropdown-menu" role="menu">
+										<li role="menuitem"><a href="#" role="link" aria-labelledby="announcement-link">
+											<span id="announcement-link">Announcements</span></a></li>
+										<li role="menuitem"><a href="#" role="link" aria-labelledby="events-link">
+											<span id="events-link">Events</span></a></li>
 										<li role="menuitem"><a href="#" role="link" aria-labelledby="committees-link">
 											<span id="committees-link">Committees</span></a></li>
 										<li role="menuitem"><a href="#" role="link" aria-labelledby="sunday-school-link">
@@ -167,12 +140,34 @@
 										<span id="contact-us-link">Contact us</span></a></li>
 							</ul>
 						</div>
-					</nav>  
-				</div>
+					</div>	<!-- End Nav Column -->
+				</div>		<!-- End Nav Row -->
+			</div>			<!-- End Nav Container -->
+		</nav>  			<!-- End Nav Section -->
+	</header>				<!-- End Header Section -->
+	<div class="container clearfix main-body"> <!-- Main Body Container -->
+		<div class="row">
+			<!-- Warning that this is just a demo website and not a live website -->
+			<div class="alert alert-warning myt-cen-txt" role="alert" 
+				aria-labelledby="myt-demo-warning">
+				<p><strong><span id="myt-demo-warning">WARNING! THIS IS A DEMO WEBSITE!!</span></strong></p>
 			</div>
-		</div>						 <!-- End Nav Container -->
-	</header>						 <!-- End Header Section -->
-	<div class="container clearfix"> <!-- Main Body Container -->
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
+				<form style="margin-top: 5px" action="index.html" method="post" 
+					role="search">
+					<div class="form-group has-feedback has-feedback-right">
+						<input type="search" name="search" class="form-control" placeholder="Search">
+						<i class="glyphicon glyphicon-search form-control-feedback"></i>
+					</div>
+				</form>
+			</div>
+			<div>
+				<a href="#">
+					<img alt="Picture of MYT URCSA logo" src="assets/myt_logo(REAL).jpeg" 
+						class="img-responsive center-block">
+				</a>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<!-- Carousel -->
@@ -238,7 +233,7 @@
 						 </div>
 					</section>
 					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
-						<img alt="Picture of Reverend" src="assets/rev_360X264.jpg" class="img-responsive center-block"> 
+						<img alt="Picture of Reverend" src="assets/rev360X264.jpg" class="img-responsive center-block"> 
 					</div>
 					<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12" role="region">
 						<h2><span class="glyphicon glyphicon-facetime-video"></span>&nbsp;Past Event Video</h2>
@@ -274,17 +269,6 @@
 				</article>
 			</div>
 		</div>
-		<aside class="row hidden-sm hidden-xs" role="complementary">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<section role="region">
-					<h2><span class="glyphicon glyphicon-comment"></span>&nbsp;Social Media Space</h2>
-					<!-- Twitter Plugin -->
-					<a class="twitter-timeline" data-width="1140" data-height="440" 
-						href="https://twitter.com/urcsamyt?ref_src=twsrc%5Etfw">Tweets by urcsamyt</a> 
-						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-				</section>
-			</div>
-		</aside>
 		<aside class="row" role="complementary">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -317,7 +301,8 @@
 							<p><span class="glyphicon glyphicon-home">&nbsp;</span>Address:</p>
 						</div>
 						<div class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
-							<p>Place the Physical and Postal Address of the Church here</p>
+							<p><a href="https://goo.gl/maps/veYV3usrNSK2" target="_blank">
+								Corner Bosman and Madiba Street, Pretoria, 0001</a></p>
 						</div>
 					</div>
 					<div class="row">
@@ -361,12 +346,14 @@
 			</div>
 		</div>
 	</footer>	<!-- End Footer -->
-	
-	<!-- Warning that this is just a demo website and not a live website -->
-	<div class="alert alert-warning container myt-cen-txt" role="alert" 
-		aria-labelledby="mytDemoWarningBottom">
-		<p><strong><span id="mytDemoWarningBottom">WARNING! THIS IS A DEMO WEBSITE!!</span></strong></p>
+	<div class="myt-cen-txt">
+		<!-- Warning that this is just a demo website and not a live website -->
+		<div class="alert alert-warning container" role="alert" 
+			aria-labelledby="mytDemoWarningBottom">
+			<p><strong><span id="mytDemoWarningBottom">WARNING! THIS IS A DEMO WEBSITE!!</span></strong></p>
+		</div>
 	</div>
+	
 	<a class="scrollIcon" href="#myt-Top-Page">		<!-- Scroll back to top icon -->
 		<i class="glyphicon glyphicon-triangle-top"></i></a>
 	
@@ -445,8 +432,8 @@
 		</div>
 	</div>		<!-- Join Modal -->
 
-	<script src="js/jquery-2.2.4.js"></script>	<!-- jQuery - necessary for Bootstrap plugins and JS files below -->
-	<script src="js/bootstrap.js"></script>		<!-- Includes all Boostrap plugins or include individual plugins as needed -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/myt-custom.js"></script>	<!-- URCSA MYT custom JS -->
 </body>	
 </html>
