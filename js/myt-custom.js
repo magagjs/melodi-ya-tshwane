@@ -38,7 +38,10 @@ $(document).ready(function() {
 	
 	// smooth scroll to top of page when scroll icon link clicked
 	$('.scrollIcon').click(function(){
-		$("html, body").animate({ scrollTop: 0 }, 1000); //perform the smooth scroll animation
+		$("html, body").animate({ scrollTop: 0 }, 1000); 	  //perform the smooth scroll animation
+		$('nav').addClass('fall-in').removeClass('fall-out'); // display navbar with animation
+		lastScrollPos = 0;		// reset to prevent navBarScroll function from firing
+		
 			return false;
 	});
 	

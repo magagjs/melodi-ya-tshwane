@@ -56,19 +56,10 @@ abbr:focus {
 	}
 }
 
-p[title="Choir itunes"] > a {
-	color: inherit;				/* use default body color on iTunes link */
-}
-
 p[title="Choir itunes"] > a:visited {
-	color: inherit;				/* use default body color on visited iTunes link */
 	border: none;				
 }
 
-p[title="Choir itunes"] > a:hover,
-p[title="Choir itunes"] > a:focus {
-	color: inherit;				/* use default body color on visited iTunes link */
-}
 
 /*==============================
 2. Grid and Layout
@@ -98,13 +89,17 @@ footer > div {
 	color: #FFFFFF; 			/* text color(White) for page footer */
 }
 
-footer a, footer a:visited {
-	color: #FFFFFF;				/* text color(White) for links in page footer */
+footer a {
+	color: #00FFFF;				/* text color(Aqua) for links in page footer */
+}
+
+footer a:visited {
 	border: none;
 }
 
-footer a:hover {
-	color: #00FFFF;				/* text color(Aqua) for links in page footer */
+footer a:hover,
+footer a:focus {
+	color: #00FFFF;				/* text color(Aqua) for hovering links in page footer */
 }
 
 header{
