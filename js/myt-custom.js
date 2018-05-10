@@ -42,7 +42,20 @@ $(document).ready(function() {
 		$('nav').addClass('fall-in').removeClass('fall-out'); // display navbar with animation
 		lastScrollPos = 0;		// reset to prevent navBarScroll function from firing
 		
-			return false;
+		return false;
+	});
+	
+	// change search button to search box on click
+	$('.toggle-search').click(function(){
+		if( $('#search-box').hasClass('search-box-hide') ){
+			$('#search-box').addClass('search-box-display')	// add display class
+				.removeClass('search-box-hide'); 			// remove hide class
+		}else{
+			$('#search-box').addClass('search-box-hide')	// add hide class
+			.removeClass('search-box-display'); 			// remove display class
+		}
+			
+		return false;
 	});
 	
 });

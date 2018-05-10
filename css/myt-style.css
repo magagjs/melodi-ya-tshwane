@@ -108,7 +108,18 @@ header{
 }
 
 header .navbar-default{
-	background-color: #4E505D;	/* navbar color */
+	background-color: #4E505D;			/* navbar color */
+	border-radius: 0px 0px 30px 30px;	/* rounded corners on bottom-left and bottom-right */
+}
+
+/* offset padding-left a little further to allow space for navbar-brand */
+header .navbar-default .navbar-nav {
+	padding-left: 55px;
+}
+
+/* override bootstrap padding for navbar-brand */
+header .navbar-default .navbar-brand {
+	padding: 0px;
 }
 
 /* first level navbar links: default display */
@@ -160,8 +171,27 @@ header .navbar-toggle .icon-bar {
   margin-left: auto;	/* center the icon-bar  */
 }
 
+/* style for the search toggler button */
+header .toggle-search{
+	float: right;     	 	/* must display on right side */
+	background: #4E505D; 	/* dark grey background*/
+	border-color: #4E505D;
+	color: #FFFFFF;
+	padding: 15px;
+}
+
 /* change styles of drop-down links in header for medium, small and extra small devices */
 @media (max-width: 767px) {
+	/* dont add offset padding-left for menubar on mobile devices*/
+	header .navbar-default .navbar-nav {
+		padding-left: 0px;
+	}
+
+	/* override bootstrap padding for navbar-brand on mobile devices */
+	header .navbar-default .navbar-brand {
+		padding: 10px;
+	}
+
 	/* first level navbar links: default display */
 	header .navbar-default .navbar-nav > li > a{
 		color: #FFFFFF;			
@@ -199,10 +229,15 @@ header .navbar-toggle .icon-bar {
 	    background-color: #FFFFFF;
 	}
 	
+	/* style for the search toggler button on mobile devices */
+	header .toggle-search{
+		padding: 20px;		/* only padding changes for alignment */
+	}
+	
 }
 
 /*================================
-4. Animation and Popups: ScrollIcon
+4. Animation and Popups
 ==================================*/
 .scrollIcon{			 /* used camelCase for jQuery 'animate()' */
 	position: fixed;
@@ -220,6 +255,16 @@ a.scrollIcon i {
 
 a.scrollIcon {
 	text-align: center;
+}
+
+/* display search box */
+.search-box-display{
+	display: block;
+}
+
+/* hide search box */
+.search-box-hide{
+	display: none;
 }
 
 /*=================================

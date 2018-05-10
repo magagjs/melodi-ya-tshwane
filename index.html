@@ -64,84 +64,87 @@
 	<header role="banner">	<!-- Header Section -->
 		<nav class="navbar navbar-default navbar-fixed-top animated" role="navigation">	<!-- Nav Section -->
 			<div class="container clearfix"> 	<!-- Nav Container -->
-				<div id="nav-row" class="row">	<!-- Nav Row -->
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">	<!-- Nav Column -->
-						<div class="navbar-header myt-cen-txt">
-							<span class="sr-only">Top Navigation</span>
-							<button type="button" class="navbar-toggle" data-toggle="collapse" 
-								data-target="#myt-navbar-collapse" role="button">
-									<span class="sr-only">Toggle Top Navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="myt-white-font"><b>MENU</b></span>
-							</button>
-						</div>
-						<div class="collapse navbar-collapse" id="myt-navbar-collapse">
-							<ul class="nav navbar-nav" role="menubar">
-								<li class="active" role="menuitem" aria-labelledby="homeLink"><a href="index.html" role="link">
-									<span id="homeLink">Home</span></a></li>
-								<li class="dropdown" role="menuitem" aria-labelledby="about-us-label" aria-haspopup="true">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										<span id="about-us-label">About us</span>
-										<b class="caret"></b>
-									</a>
-									<ul class="dropdown-menu" role="menu">
-										<li role="menuitem"><a href="#" role="link" aria-labelledby="history-link">
-											<span id="history-link">History</span></a></li>
-										<li role="menuitem"><a href="#" role="link" aria-labelledby="vision-link">
-											<span id="vision-link">Vision</span></a></li>
-										<li role="menuitem"><a href="#" role="link" aria-labelledby="reverend-link">
-											<span id="reverend-link">Reverend</span></a></li>
-									</ul>
-								</li>
-								<li role="menuitem" aria-labelledby="homeLink">
-									<a href="gallery.html" role="link" aria-labelledby="gallery-link">
-										<span id="gallery-link">Gallery</span></a></li>
-								<li  class="dropdown" role="menuitem" aria-labelledby="ministries-label" aria-haspopup="true">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown"
-										role="link" aria-labelledby="ministries-label">
-										<span id="ministries-link">Ministries</span><b class="caret"></b>
-									</a>   
-									<ul class="dropdown-menu" role="menu">
-										<li role="menuitem"><a href="#" role="link" aria-labelledby="cwm-link">
-											<span id="cwm-link">CWM</span></a></li>
-										<li role="menuitem"><a href="#" role="link" aria-labelledby="cmm-link">
-											<span id="cmm-link">CMM</span></a></li>
-										<li role="menuitem"><a href="#" role="link" aria-labelledby="cym-link">
-											<span id="cym-link">CYM</span></a></li>
-										<li role="menuitem"><a href="choir.html" role="link" aria-labelledby="choir-link">
-											<span id="choir-link">Choir</span></a></li>
-										<li role="menuitem"><a href="#" role="link" aria-labelledby="myt-youth-link">
-											<span id="myt-youth-link">MYT Youth</span></a></li>
-									</ul>									
-								</li>										
-								<li class="dropdown" role="menuitem">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" 
-										role="link" aria-labelledby="congregation-label">
-											<span id="congregation-label">Congregation</span>
-										<b class="caret"></b>
-									</a>
-									<ul class="dropdown-menu" role="menu">
-										<li role="menuitem"><a href="#" role="link" aria-labelledby="announcement-link">
-											<span id="announcement-link">Announcements</span></a></li>
-										<li role="menuitem"><a href="#" role="link" aria-labelledby="events-link">
-											<span id="events-link">Events</span></a></li>
-										<li role="menuitem"><a href="#" role="link" aria-labelledby="committees-link">
-											<span id="committees-link">Committees</span></a></li>
-										<li role="menuitem"><a href="#" role="link" aria-labelledby="sunday-school-link">
-											<span id="sunday-school-link">Sunday School</span></a></li>
-									</ul>
-								</li>
-								<li role="menuitem"><a href="#" role="link" aria-labelledby="donations-link">
-									<span id="donations-link">Donations</span></a></li>
-								<li role="menuitem"><a href="#" data-toggle="modal" 
-									data-target="#myt-contact-modal" role="link" aria-labelledby="contact-us-link">
-										<span id="contact-us-link">Contact us</span></a></li>
+				<a class="navbar-brand" href="#">
+					<img class="img-responsive" alt="Picture of MYT URCSA logo" 
+						src="assets/mytLogo53x51.jpeg">
+				</a>
+				<div class="toggle-search btn btn-default">
+					<i class="glyphicon glyphicon-search"></i>
+				</div>
+				<div class="navbar-header myt-cen-txt">
+					<span class="sr-only">Top Navigation</span>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" 
+						data-target="#myt-navbar-collapse" role="button">
+							<span class="sr-only">Toggle Top Navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="myt-white-font"><b>MENU</b></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myt-navbar-collapse">		<!-- MenuBar Section -->
+					<ul class="nav navbar-nav" role="menubar">
+						<li class="active" role="menuitem" aria-labelledby="homeLink"><a href="index.html" role="link">
+							<span id="homeLink">Home</span></a></li>
+						<li class="dropdown" role="menuitem" aria-labelledby="about-us-label" aria-haspopup="true">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span id="about-us-label">About us</span>
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li role="menuitem"><a href="#" role="link" aria-labelledby="history-link">
+									<span id="history-link">History</span></a></li>
+								<li role="menuitem"><a href="#" role="link" aria-labelledby="vision-link">
+									<span id="vision-link">Vision</span></a></li>
+								<li role="menuitem"><a href="#" role="link" aria-labelledby="reverend-link">
+									<span id="reverend-link">Reverend</span></a></li>
 							</ul>
-						</div>
-					</div>	<!-- End Nav Column -->
-				</div>		<!-- End Nav Row -->
+						</li>
+						<li role="menuitem" aria-labelledby="homeLink">
+							<a href="gallery.html" role="link" aria-labelledby="gallery-link">
+								<span id="gallery-link">Gallery</span></a></li>
+						<li  class="dropdown" role="menuitem" aria-labelledby="ministries-label" aria-haspopup="true">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+								role="link" aria-labelledby="ministries-label">
+								<span id="ministries-link">Ministries</span><b class="caret"></b>
+							</a>   
+							<ul class="dropdown-menu" role="menu">
+								<li role="menuitem"><a href="#" role="link" aria-labelledby="cwm-link">
+									<span id="cwm-link">CWM</span></a></li>
+								<li role="menuitem"><a href="#" role="link" aria-labelledby="cmm-link">
+									<span id="cmm-link">CMM</span></a></li>
+								<li role="menuitem"><a href="#" role="link" aria-labelledby="cym-link">
+									<span id="cym-link">CYM</span></a></li>
+								<li role="menuitem"><a href="choir.html" role="link" aria-labelledby="choir-link">
+									<span id="choir-link">Choir</span></a></li>
+								<li role="menuitem"><a href="#" role="link" aria-labelledby="myt-youth-link">
+									<span id="myt-youth-link">MYT Youth</span></a></li>
+							</ul>									
+						</li>										
+						<li class="dropdown" role="menuitem">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+								role="link" aria-labelledby="congregation-label">
+									<span id="congregation-label">Congregation</span>
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li role="menuitem"><a href="#" role="link" aria-labelledby="announcement-link">
+									<span id="announcement-link">Announcements</span></a></li>
+								<li role="menuitem"><a href="#" role="link" aria-labelledby="events-link">
+									<span id="events-link">Events</span></a></li>
+								<li role="menuitem"><a href="#" role="link" aria-labelledby="committees-link">
+									<span id="committees-link">Committees</span></a></li>
+								<li role="menuitem"><a href="#" role="link" aria-labelledby="sunday-school-link">
+									<span id="sunday-school-link">Sunday School</span></a></li>
+							</ul>
+						</li>
+						<li role="menuitem"><a href="#" role="link" aria-labelledby="donations-link">
+							<span id="donations-link">Donations</span></a></li>
+						<li role="menuitem"><a href="#" data-toggle="modal" 
+							data-target="#myt-contact-modal" role="link" aria-labelledby="contact-us-link">
+								<span id="contact-us-link">Contact us</span></a></li>
+					</ul>
+				</div>		<!-- End MenuBar Section -->
 			</div>			<!-- End Nav Container -->
 		</nav>  			<!-- End Nav Section -->
 	</header>				<!-- End Header Section -->
@@ -152,20 +155,15 @@
 				aria-labelledby="myt-demo-warning">
 				<p><strong><span id="myt-demo-warning">WARNING! THIS IS A DEMO WEBSITE!!</span></strong></p>
 			</div>
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
+			<div id="search-box" class="search-box-hide myt-cen-txt">
 				<form style="margin-top: 5px" action="index.html" method="post" 
 					role="search">
 					<div class="form-group has-feedback has-feedback-right">
-						<input type="search" name="search" class="form-control" placeholder="Search">
+						<input type="search" name="search" 
+							class="form-control" placeholder="Type the search words and press Enter">
 						<i class="glyphicon glyphicon-search form-control-feedback"></i>
 					</div>
 				</form>
-			</div>
-			<div>
-				<a href="#">
-					<img alt="Picture of MYT URCSA logo" src="assets/mytLogo133x129.jpeg" 
-						class="img-responsive center-block">
-				</a>
 			</div>
 		</div>
 		<div class="row">
@@ -225,8 +223,29 @@
 					<h2><span class="glyphicon glyphicon-book"></span>&nbsp;<abbr title="Uniting Reformed Church in Southern Africa">
 						URCSA</abbr> - Melodi Ya Tshwane</h2>
 					<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12" role="region">
-						<p>Place church tagline here (e.g. Stewardship for God, Living Belhar, etc). 
-						 	Keep it simple (one line) since we have a whole page dedicated to Vision and History.</p>
+						<p>Welcome to the homepage of Melodi ya Tshwane (MyT). We are a congregation of the Uniting Reformed Church in 
+							Southern Africa located on corner Bosman and Madiba Streets in the city center of Pretoria. Melodi ya Tshwane 
+							is a multi-racial, multi-cultural and multi-lingual congregation consisting of diverse people who believe that 
+							they are called to bring a message of hope and encouragement to people living in and around the city. It is always 
+							the congregation’s wish and prayer that through the grace of Jesus Christ and the power of the Holy Spirit, God will 
+							enable it to strive for the realization of its vision of:</p>
+						<p style="text-align:center;"><em>Being a vibrant and caring Christian community, uniting diverse people in worship, 
+							empowering one another in working for justice and peace in the city.</em></p>
+						<p>Melodi ya Tshwane is slightly different from many other urban or city ministry organizations and institutions which 
+							are more project-based, helping the poor and the needy by way of either accommodating them in an institution or distributing 
+							hand-outs to them. Though Melodi ya Tshwane church do give some handouts occasionally, it nevertheless does so within the 
+							context of firstly being a congregation which preaches the word and serves sacraments whilst at the same time reaching out to 
+							the poor and needy in its surroundings.</p>
+						<p>To know more about Melodi ya Tshwane congregation please feel free to surf our web page.</p>
+						<p>You can find out:</p>
+							<ul><li><a href="#">Who we are</a></li>
+								<li><a href="#">How we began</a></li>
+								<li><a href="#">What we are doing</a></li>
+								<li><a href="#">How and why we are doing it</a></li></ul>
+						<p>If you are already attending our church visit the <a href="gallery.html">galleries</a> to see yourself in the church activities. 
+							If you are new, we would love you to <a href="#join-myt">join</a> us on Sundays at 10am. There are various activities or 
+							ministries where you can <a href="#">get involved</a>.</p>
+						<p>Once more, welcome to our site!<p><p><strong>Rev. Dr. Tipi Jacob Nthakhe</strong></p>
 						<div class="jumbotron col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<h3>Scripture of the week</h3>
 							<p>Place scripture of the week here - last Sunday's scripture reading. This will be changed 
@@ -237,10 +256,10 @@
 					</section>
 					<section class="col-lg-8 col-md-12 col-sm-12 col-xs-12" role="region">
 						<h2><span class="glyphicon glyphicon-user"></span>&nbsp;Join our Congregation</h2>
-						<p>Place content about joining the church to make the home page the first place
-						 people can use to join the church - e.g. Church starts at 10 AM every Sunday. Click button below to join.</p>
+						<p>If you are new, we would love you to <a href="#join-myt">join</a> us on Sundays at 10am. There are various activities or 
+							ministries where you can <a href="#">get involved</a>. Click button below to join.</p>
 						 <div class="myt-cen-txt">
-							 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myt-join-modal" 
+							 <button id="join-myt" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myt-join-modal" 
 							 	role="button" aria-labelledby="join-btn"><span id="join-btn">Join</span></button>
 						 </div>
 					</section>
