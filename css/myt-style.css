@@ -68,6 +68,13 @@ p[title="Choir itunes"] > a:visited {
 .main-body{
 	margin-top: 58px;
 }
+
+/* spacing in between sections */
+article section{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
 /* header must not hide main content in small devices*/
 @media (max-width: 767px){
 	.main-body{
