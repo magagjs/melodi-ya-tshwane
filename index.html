@@ -28,8 +28,8 @@
 	<meta property="og:description" content="View MyT accouncements, events, contact information and join 
 		URCSA-Melodi ya Tshwane at https://magags.github.io/myt/"> 
 	<meta property="og:type" content="website"> 
-	<meta property="og:image:width" content="70"> 
-	<meta property="og:image:height" content="70"> 
+	<meta property="og:image:width" content="256"> 
+	<meta property="og:image:height" content="60"> 
 	<meta property="og:image:type" content="image/jpeg"> 
 	<meta property="og:image" content="https://magags.github.io/myt/assets/mytLogo(OG-image).jpeg">
 	<meta property="og:image:alt" content="An emblem of URCSA - Melodi ya Tshwane" />
@@ -67,7 +67,7 @@
 	<header role="banner">	<!-- Header Section -->
 		<nav class="navbar navbar-default navbar-fixed-top animated" role="navigation">	<!-- Nav Section -->
 			<div class="container clearfix"> 	<!-- Nav Container -->
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="index.html" role="link" aria-labelledby="myt-home-link">
 					<img class="img-responsive" alt="Picture of MyT URCSA logo" 
 						src="assets/mytLogo53x51.jpeg">
 				</a>
@@ -209,11 +209,11 @@
 							<img src="assets/fathersDayEvent1140x430.png" alt="Past Event picture">
 						</div>
 					</div>
-					<a class="carousel-control left" href="#myt-home-carousel" data-slide="prev">
+					<a class="carousel-control left" href="#myt-home-carousel" data-slide="prev" role="link">
 						<span class="glyphicon glyphicon-chevron-left"></span>
 						<span class="sr-only">Previous</span>
 					</a>
-					<a class="carousel-control right" href="#myt-home-carousel" data-slide="next">
+					<a class="carousel-control right" href="#myt-home-carousel" data-slide="next" role="link">
 						<span class="glyphicon glyphicon-chevron-right"></span>
 						<span class="sr-only">Next</span>
 					</a>
@@ -241,11 +241,12 @@
 							the poor and needy in its surroundings.</p>
 						<p>To know more about Melodi ya Tshwane congregation please feel free to surf our web page.</p>
 						<p>You can find out:</p>
-							<ul><li><a href="aboutUs.html">Who we are</a></li>
-								<li><a href="aboutUs.html#urcsa-name">How we began</a></li>
-								<li><a href="congregation.html">What we are doing</a></li>
-								<li><a href="congregation.html#committees">How and why we are doing it</a></li></ul>
-						<p>If you are already attending our church visit the <a href="gallery.html">galleries</a> to see yourself in the church activities.</p>
+							<ul><li><a href="aboutUs.html" role="link" aria-labelledby="aboutUs-link">Who we are</a></li>
+								<li><a href="aboutUs.html#urcsa-name" role="link" aria-labelledby="aboutUs-link">How we began</a></li>
+								<li><a href="congregation.html" role="link" aria-labelledby="congregation-link">What we are doing</a></li>
+								<li><a href="congregation.html#committees" role="link" aria-labelledby="congregation-link">How and why we are doing it</a></li></ul>
+						<p>If you are already attending our church visit the <a href="gallery.html" role="link" aria-labelledby="gallery-link">galleries</a> 
+							to see yourself in the church activities.</p>
 						<p>Once more, welcome to our site!<p><p><strong>Rev. Dr. Tipi Jacob Nthakhe</strong></p>
 						<div class="jumbotron col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<h3>Scripture of the week</h3>
@@ -264,9 +265,10 @@
 								On the first Sunday of every 2nd month we welcome new members and administer baptism.</p>
 							<p>Every third Sunday of the month we celebrate Holy Communion, which is always a special occasion for our congregation,
 									as we affirm our unity in Christ across all human barriers.</p>
-							<p>If you are new, we would love you to <a href="#join-myt" data-toggle="modal" data-target="#myt-join-modal">join</a> us on 
-								Sundays at 10am. There are various activities or ministries where you can <a href="ministries.html">get involved</a>. 
-								Click button below to join online and we will contact you.</p>
+							<p>If you are new, we would love you to <a href="#join-myt" data-toggle="modal" data-target="#myt-join-modal" role="link" 
+								aria-labelledby="join-myt-link"> join</a> us on Sundays at 10am. There are various activities or ministries where you 
+								can <a href="ministries.html" role="link" aria-labelledby="ministries-link"> get involved</a>. Click button below to join 
+								online and we will contact you.</p>
 							 <div class="myt-cen-txt">
 								 <button id="join-myt" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myt-join-modal" 
 								 	role="button" aria-labelledby="join-btn"><span id="join-btn">Join</span></button>
@@ -315,22 +317,29 @@
 		</div>
 		<aside class="row" role="complementary">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<a href="https://www.facebook.com/melodiyatshwane/" target="_blank">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<a href="https://www.facebook.com/melodiyatshwane/" target="_blank" role="link" aria-labelledby="facebook-link">
 						<img class="img-responsive center-block" alt="Facebook Icon. White background with 
 							a Black Facebook logo centered." src="assets/fbIcon64x64.png"><span>Facebook</span> 
 					</a>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<a href="https://twitter.com/urcsamyt" target="_blank">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<a href="https://twitter.com/urcsamyt" target="_blank" role="link" aria-labelledby="twitter-link">
 						<img class="img-responsive center-block" alt="Twitter Icon. White background with 
 							a Black Twitter logo centered." src="assets/twitterIcon64x64.png"><span>Twitter</span>
 					</a>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<a href="https://www.instagram.com/urcsamyt/" target="_blank">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<a href="https://www.instagram.com/urcsamyt/" target="_blank" role="link" aria-labelledby="instagram-link">
 						<img class="img-responsive center-block" alt="Instagram Icon. White background with 
 							a Black Instagram logo centered." src="assets/instagramIcon64x64.png"><span>Instagram</span>
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<a href="https://www.youtube.com/channel/UCYT4hwfjKNDJ_2gCSLeQARQ" target="_blank" role="link" 
+						aria-labelledby="youtube-link">
+						<img class="img-responsive center-block" alt="YouTube Icon. White background with 
+							a Black and White YouTube logo centered." src="assets/youTubeIcon64x64.png"><span>YouTube</span>
 					</a>
 				</div>
 			</div>
@@ -345,7 +354,8 @@
 							<p><span class="glyphicon glyphicon-home">&nbsp;</span>Address:</p>
 						</div>
 						<div class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
-							<p><a href="https://goo.gl/maps/veYV3usrNSK2" target="_blank">
+							<p><a href="https://goo.gl/maps/veYV3usrNSK2" target="_blank" role="link" 
+								aria-labelledby="google-map-link">
 								Corner Bosman and Madiba Street, Pretoria, 0001</a></p>
 						</div>
 					</div>
@@ -367,15 +377,15 @@
 					</div>
 				</div>
 				<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 myt-cen-txt">
-					<p><a href="#" target="_blank">Newsletter</a></p>
-					<p><a href="#" target="_blank">Downloads</a></p>
-					<p><a href="http://urcsa.net/" target="_blank">Affilations</a></p>
+					<p><a href="#" target="_blank" role="link" aria-labelledby="myt-newsletter-link">Newsletter</a></p>
+					<p><a href="#" target="_blank" role="link" aria-labelledby="myt-downloads-link">Downloads</a></p>
+					<p><a href="http://urcsa.net/" target="_blank" role="link" aria-labelledby="myt-affiliations-link">Affilations</a></p>
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 myt-cen-txt">
 					<p>
 						<span class="glyphicon glyphicon-phone">&nbsp;</span>
-						<a href="#" target="_blank">Download our mobile App</a></p>
-					<p><a href="#" target="_blank"><img class="img-responsive center-block" 
+						<a href="#" target="_blank" role="link" aria-labelledby="google-play-link">Download our mobile App</a></p>
+					<p><a href="#" target="_blank" role="link" aria-labelledby="google-play-link"><img class="img-responsive center-block" 
 						src="assets/googlePlayBadge320x200.png" alt="Google Play badge, 
 							black with transparent background and contains Google Play logo 
 							and the the words: GET IT ON GOOLGLE PLAY"/></a></p>
@@ -385,7 +395,9 @@
 				<p>
 					Copyright &copy; <abbr title="Uniting Reformed Church in Southern Africa">
 						URCSA</abbr>&nbsp;Melodi ya Tshwane 2018 | Website developed by 
-					<a rel="author" href="#" target="_blank"><abbr title="Melodi ya Tshwane">MyT</abbr> Communications Committee</a>
+					<a rel="author" href="congregation.html#communications-com" target="_blank" role="link" 
+						aria-labelledby="myt-communications-link"><abbr title="Melodi ya Tshwane">MyT</abbr> 
+						Communications Committee</a>
 				</p>
 			</div>
 		</div>
@@ -398,7 +410,7 @@
 		</div>
 	</div>
 	
-	<a class="scrollIcon" href="#myt-Top-Page">		<!-- Scroll back to top icon -->
+	<a class="scrollIcon" href="#myt-Top-Page" role="link" aria-labelledby="scroll-Top-link">		<!-- Scroll back to top icon -->
 		<i class="glyphicon glyphicon-triangle-top"></i></a>
 	
 	<!-- 'Contact us' Modal -->
