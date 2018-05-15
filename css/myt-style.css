@@ -28,6 +28,12 @@ h6,
 	font-family: 'Raleway', sans-serif;
 }
 
+/* style level 1 headings */
+h1, .h1{
+	background-color: #4E505D;	/* background color for level 1 headings */
+	color: #FFFFFF; 			/* text color(White) for level 1 headings */
+}
+
 .myt-cen-txt{					
 	text-align: center;	/* align text to center-use Bootstrap 'center-block' for <img> */
 }
@@ -48,10 +54,18 @@ abbr:focus {
 	content: attr(title);	/* abbr title content as tooltip */
 }
 
+@media (max-width: 480px){
+	abbr:hover, 
+	abbr:active, 
+	abbr:focus {
+		content: attr(title);	/* abbr title content as tooltip */
+	}
+}
+
 @media (max-width: 767px){
-	article abbr:hover, 
-	article abbr:active, 
-	article abbr:focus {
+	abbr:hover, 
+	abbr:active, 
+	abbr:focus {
 		content: attr(title);	/* abbr title content as tooltip */
 	}
 }
@@ -72,11 +86,33 @@ p[title="Choir itunes"] > a:visited {
 /* spacing in between sections */
 article section{
 	padding-top: 15px;
-	padding-bottom: 15px;
+}
+
+/* reset spacing in between sections if section is within a section */
+section section{
+	padding-top: 0px;
+}
+
+/* alignment for Google reCaptcha div */
+div .g-recaptcha {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* make Google reCaptcha  responsive <480px */
+@media (max-width: 480px){
+	.g-recaptcha iframe{
+		max-width: 100% !important;
+		transform: scale(0.77);
+		-webkit-transform: scale(0.77);
+		-moz-transform: scale(0.77);
+    	-o-transform: scale(0.77);
+    	-ms-transform: scale(0.77);
+	}
 }
 
 /* header must not hide main content in small devices*/
-@media (max-width: 767px){
+@media screen and (max-width: 767px){
 	.main-body{
 		margin-top: 58px;
 	}

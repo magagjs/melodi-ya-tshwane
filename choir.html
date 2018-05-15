@@ -54,6 +54,8 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+    
+    <script src='https://www.google.com/recaptcha/api.js'></script>		<!-- Google reCaptcha v2 -->
 </head>	
 <body>
 	<header role="banner">	<!-- Header Section -->
@@ -264,7 +266,7 @@
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
 				<p>Copyright &copy; <abbr title="Uniting Reformed Church in Southern Africa">
 					URCSA</abbr>&nbsp;Melodi ya Tshwane 2018 | Website developed by
-					<a rel="author" href="#" target="_blank">MyT Communications Committee</a>
+					<a rel="author" href="#" target="_blank"><abbr title="Melodi ya Tshwane">MyT</abbr> Communications Committee</a>
 				</p>
 			</div>
 		</div>
@@ -309,6 +311,10 @@
 						</div>	
 						<div class="alert alert-info"><p>You can also use the contact information in 
 							'About us' to contact us.</p></div>
+							
+						<!-- Google ReCaptcha v2 -->
+						<div class="g-recaptcha" data-sitekey="6LdlQlkUAAAAALDpdpxwFkyxhHr9FHHOrHiSZyGV"></div>						
+							
 						<!-- Remember to change button type for 'Send' to 'submit' - for form -->
 						<button type="button" class="btn btn-primary">Send</button>		
 						<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>			
@@ -343,6 +349,10 @@
 							<label>Email</label>
 							<input type="email" name="email" class="form-control" placeholder="Enter Email Address">
 						</div>	
+												
+						<!-- Google ReCaptcha v2 -->
+						<div class="g-recaptcha" data-sitekey="6LdlQlkUAAAAALDpdpxwFkyxhHr9FHHOrHiSZyGV"></div>	
+						
 						<!-- Remember to change button type for 'Send' to 'submit' - for form -->
 						<button type="button" class="btn btn-primary">Join</button>		
 						<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>			

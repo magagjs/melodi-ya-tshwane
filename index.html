@@ -60,6 +60,8 @@
     <!-- Add video support for Flash Player as a fallback to HTML5 <video> -->
 	<script src="js/jwplayer.js"></script>
 	<script src="js/swfobject.js"></script>
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>		<!-- Google reCaptcha v2 -->
 </head>
 <body id="myt-Top-Page" data-spy="scroll" data-target=".navbar">
 	<header role="banner">	<!-- Header Section -->
@@ -221,10 +223,10 @@
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<article role="main">
-					<h1><span><i class="fas fa-church"></i></span>&nbsp;<abbr title="Uniting Reformed Church in Southern Africa">
+					<h1><i class="fas fa-church"></i>&nbsp;<abbr title="Uniting Reformed Church in Southern Africa">
 						URCSA</abbr> Melodi ya Tshwane</h1>
 					<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12" role="region">
-						<p>Welcome to the homepage of Melodi ya Tshwane (MyT). We are a congregation of the Uniting Reformed Church in 
+						<p>Welcome to the homepage of Melodi ya Tshwane (<abbr title="Melodi ya Tshwane">MyT</abbr>). We are a congregation of the Uniting Reformed Church in 
 							Southern Africa located on corner Bosman and Madiba Streets in the city center of Pretoria. Melodi ya Tshwane 
 							is a multi-racial, multi-cultural and multi-lingual congregation consisting of diverse people who believe that 
 							they are called to bring a message of hope and encouragement to people living in and around the city. It is always 
@@ -239,13 +241,11 @@
 							the poor and needy in its surroundings.</p>
 						<p>To know more about Melodi ya Tshwane congregation please feel free to surf our web page.</p>
 						<p>You can find out:</p>
-							<ul><li><a href="#">Who we are</a></li>
-								<li><a href="#">How we began</a></li>
-								<li><a href="#">What we are doing</a></li>
-								<li><a href="#">How and why we are doing it</a></li></ul>
-						<p>If you are already attending our church visit the <a href="gallery.html">galleries</a> to see yourself in the church activities. 
-							If you are new, we would love you to <a href="#join-myt">join</a> us on Sundays at 10am. There are various activities or 
-							ministries where you can <a href="#">get involved</a>.</p>
+							<ul><li><a href="aboutUs.html">Who we are</a></li>
+								<li><a href="aboutUs.html#urcsa-name">How we began</a></li>
+								<li><a href="congregation.html">What we are doing</a></li>
+								<li><a href="congregation.html#committees">How and why we are doing it</a></li></ul>
+						<p>If you are already attending our church visit the <a href="gallery.html">galleries</a> to see yourself in the church activities.</p>
 						<p>Once more, welcome to our site!<p><p><strong>Rev. Dr. Tipi Jacob Nthakhe</strong></p>
 						<div class="jumbotron col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<h3>Scripture of the week</h3>
@@ -255,36 +255,41 @@
 							<br><b>e.g. Book:Chapter:Verse:</b></p><blockquote>"Quote..."</blockquote>
 						</div>
 					</section><br>
-					<section class="col-lg-8 col-md-12 col-sm-12 col-xs-12" role="region">
-						<h2><span><i class="fas fa-handshake"></i></span>&nbsp;Join our Congregation</h2>
-						<p>Our worship service starts at 10h00 every Sunday morning and it is conducted between English and N&S Sotho or Zulu. 
-							We do this because our members come from different language backgrounds, and we want to make sure that everyone 
-							understands the message. In this way we learn to sing one another’s songs and appreciate one another’s cultures. 
-							On the first Sunday of every 2nd month we welcome new members and administer baptism.</p>
-						<p>Every third Sunday of the month we celebrate Holy Communion, which is always a special occasion for our congregation,
-								as we affirm our unity in Christ across all human barriers.</p>
-						<p>If you are new, we would love you to <a href="#myt-join-modal">join</a> us on Sundays at 10am. There are various activities or 
-							ministries where you can <a href="ministries.html">get involved</a>. Click button below to join online and we will 
-							contact you.</p>
-						 <div class="myt-cen-txt">
-							 <button id="join-myt" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myt-join-modal" 
-							 	role="button" aria-labelledby="join-btn"><span id="join-btn">Join</span></button>
-						 </div>
+					<section role="region">
+						<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+							<h1><span><i class="fas fa-handshake"></i></span>&nbsp;&nbsp;Join our Congregation</h1>
+							<p>Our worship service starts at 10h00 every Sunday morning and it is conducted between English and N&S Sotho or Zulu. 
+								We do this because our members come from different language backgrounds, and we want to make sure that everyone 
+								understands the message. In this way we learn to sing one another’s songs and appreciate one another’s cultures. 
+								On the first Sunday of every 2nd month we welcome new members and administer baptism.</p>
+							<p>Every third Sunday of the month we celebrate Holy Communion, which is always a special occasion for our congregation,
+									as we affirm our unity in Christ across all human barriers.</p>
+							<p>If you are new, we would love you to <a href="#join-myt" data-toggle="modal" data-target="#myt-join-modal">join</a> us on 
+								Sundays at 10am. There are various activities or ministries where you can <a href="ministries.html">get involved</a>. 
+								Click button below to join online and we will contact you.</p>
+							 <div class="myt-cen-txt">
+								 <button id="join-myt" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myt-join-modal" 
+								 	role="button" aria-labelledby="join-btn"><span id="join-btn">Join</span></button>
+							 </div>
+						</div>
+						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
+							<img alt="Picture of Reverend" src="assets/revJoin360x239.png" class="img-responsive center-block"> 
+						</div>
 					</section>
-					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
-						<img alt="Picture of Reverend" src="assets/revJoin360x239.png" class="img-responsive center-block"> 
-					</div>
 					<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12" role="region">
-						<h2><span class="glyphicon glyphicon-facetime-video"></span>&nbsp;Past Event Video</h2>
-						<p>Place video content here of any past church event that is worthy of being viewed over and over by web users.</p>
-						<!-- Start Video Markup: http://camendesign.com/code/video_for_everybody -->
+						<h1><span class="glyphicon glyphicon-facetime-video"></span>&nbsp;&nbsp;Event Video</h1>
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe src="https://www.youtube.com/embed/uMeJdJU9yU4?rel=0" frameborder="0" 
+								allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+<!-- 						Start Video Markup: http://camendesign.com/code/video_for_everybody
 						<div class="embed-responsive embed-responsive-16by9">
 	 						<video poster="assets/eventPoster.jpg" controls width="720" height="405"
 								preload="none" class="embed-responsive-item">
-								<source src="assets/bigBuckBunny.webm" type="video/vp8"/> 	<!-- IE -->
-								<source src="assets/bigBuckBunny.mp4" type="video/mp4"/>	<!-- Safari/iOS -->
-								<source src="assets/bigBuckBunny.ogv" type="video/ogg"/>	<!-- Firefox/Opera/Chrome10 -->
-								<!-- Add fallback for flash using 'swfobject.js' -->
+								<source src="assets/bigBuckBunny.webm" type="video/vp8"/> 	IE
+								<source src="assets/bigBuckBunny.mp4" type="video/mp4"/>	Safari/iOS
+								<source src="assets/bigBuckBunny.ogv" type="video/ogg"/>	Firefox/Opera/Chrome10
+								Add fallback for flash using 'swfobject.js'
 								<object id="mytVideoPlayer" name="player" width="720" height="429" type="application/x-shockwave-flash">
 										<param name="classid" value="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
 										<param name="movie" value="player.swf"/>
@@ -303,7 +308,7 @@
 								</object>
 							</video>
 						</div>
-						<!-- End Video Markup -->
+						End Video Markup -->
 					</section>
 				</article>
 			</div>
@@ -380,7 +385,7 @@
 				<p>
 					Copyright &copy; <abbr title="Uniting Reformed Church in Southern Africa">
 						URCSA</abbr>&nbsp;Melodi ya Tshwane 2018 | Website developed by 
-					<a rel="author" href="#" target="_blank">MyT Communications Committee</a>
+					<a rel="author" href="#" target="_blank"><abbr title="Melodi ya Tshwane">MyT</abbr> Communications Committee</a>
 				</p>
 			</div>
 		</div>
@@ -427,6 +432,10 @@
 						</div>	
 						<div class="alert alert-info"><p>You can also use the contact information in 
 							'About us' to contact us.</p></div>
+						
+						<!-- Google ReCaptcha v2 -->
+						<div class="g-recaptcha" data-sitekey="6LdlQlkUAAAAALDpdpxwFkyxhHr9FHHOrHiSZyGV"></div>	
+						
 						<!-- Remember to change button type for 'Send' to 'submit' - for form -->
 						<button type="button" class="btn btn-primary">Send</button>		
 						<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>			
@@ -460,11 +469,15 @@
 							<label>Email</label>
 							<input type="email" name="email" class="form-control" placeholder="Enter Email Address">
 						</div>	
+						
+						<!-- Google ReCaptcha v2 -->
+						<div class="g-recaptcha" data-sitekey="6LdlQlkUAAAAALDpdpxwFkyxhHr9FHHOrHiSZyGV"></div>
+
 						<!-- Remember to change button type for 'Join' to 'submit' - for form -->
 						<button type="button" class="btn btn-primary" role="button" aria-labelledby="joinMytBtn">
 							<span id="joinMytBtn">Join</span></button>		
 						<button type="button" class="btn btn-primary" data-dismiss="modal" role="button" 
-							aria-labelledby="cancelJoinBtn"><span id="cancelJoinBtn">Cancel</span></button>			
+							aria-labelledby="cancelJoinBtn"><span id="cancelJoinBtn">Cancel</span></button>		
 					</form>
 				</div>
 			</div>

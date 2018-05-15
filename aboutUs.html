@@ -55,6 +55,8 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+    
+	<script src='https://www.google.com/recaptcha/api.js'></script>		<!-- Google reCaptcha v2 -->    
 </head>	
 <body>
 	<header role="banner">	<!-- Header Section -->
@@ -164,7 +166,7 @@
 				</form>
 			</div>
 			<article class="row" role="main">
-				<h1>About Us</h1>
+				<h1><i class="fas fa-address-card"></i>&nbsp;&nbsp;About Us</h1>
 				<section id="vision" role="region">
 					<h2><span class="glyphicon glyphicon-eye-open"></span>&nbsp;Vision</h2>
 					<p>We strive to be a vibrant and caring Christian community, uniting as diverse people in worship, 
@@ -172,44 +174,50 @@
 				</section>
 				<section id="history" role="region">
 					<h2><i class="fas fa-history"></i>&nbsp;History</h2>
-					<h3>Our Denomination</h3>
-					<p>We are part of the Uniting Reformed Church in Southern Africa, which was established in 1994, 
-						when the former “Dutch Reformed Mission Church” and “Dutch Reformed Church in Africa” united. 
-						That was the first step towards uniting the whole divided Dutch Reformed family. We are deeply 
-						concerned about Christian unity and justice in society.</p>
-					<h3>Our Name</h3>
-					<p>The name of our congregation has a long history. It is a Sotho expression which means “The songs of Tshwane.” 
-						It was a name given to the Fountains, by the African inhabitants of this part of the world before the Voortrekkers 
-						arrived.</p>
-					<p>Tshwane is the name they gave to the river which is today called the Apies River.</p>
-					<p>For centuries the Fountains has been a place of rest for the groups of Africans who traveled through the area 
-						and brought their cattle to drink from the Tshwane Fountain. In later years it became a place of rest and refreshment 
-						for tired workers from the growing city of Tshwane.</p>
-					<p>Likewise, our congregation wants to be a place of refreshment and rest for the hardworking people of Tshwane. We 
-						want to be a place of unity, where people can sing God’s praises together on the banks of the Tshwane River.</p>
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<h3>Our Church's Emblem</h3>
-						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" role="region">
-							<img class="img-responsive" alt="Emblem of URCSA. Contains a ship anchor in white color with a coastal lighhouse on the background in black color.
-								The top part of the ship anchor is aligned to the center of the coastal lighthouse and the bottom part of the ship anchor
-								is spread out on the bottom of the coastal lighhouse. Both the anchor and the lighthouse are within a branded circle which
-								is black in color and the background color within the circle is white. The outline of the circle contains the words 
-								'VERENIGENDE GEREFORMEERDE KERK IN SUIDER-AFRIKA' which is the Dutch language translation for 'Uniting Reformed Church in 
-								Southern Africa'. All the words are in white font-color in a black background. The circle is not joined at the bottom of the 
-								picture." src="assets/URCSAEmblem447x438.png">
+					<section id="denomination" role="region">
+						<h3>Our Denomination</h3>
+						<p>We are part of the Uniting Reformed Church in Southern Africa, which was established in 1994, 
+							when the former “Dutch Reformed Mission Church” and “Dutch Reformed Church in Africa” united. 
+							That was the first step towards uniting the whole divided Dutch Reformed family. We are deeply 
+							concerned about Christian unity and justice in society.</p>
+					</section>
+					<section id="urcsa-name" role="region">
+						<h3>Our Name</h3>
+						<p>The name of our congregation has a long history. It is a Sotho expression which means “The songs of Tshwane.” 
+							It was a name given to the Fountains, by the African inhabitants of this part of the world before the Voortrekkers 
+							arrived.</p>
+						<p>Tshwane is the name they gave to the river which is today called the Apies River.</p>
+						<p>For centuries the Fountains has been a place of rest for the groups of Africans who traveled through the area 
+							and brought their cattle to drink from the Tshwane Fountain. In later years it became a place of rest and refreshment 
+							for tired workers from the growing city of Tshwane.</p>
+						<p>Likewise, our congregation wants to be a place of refreshment and rest for the hardworking people of Tshwane. We 
+							want to be a place of unity, where people can sing God’s praises together on the banks of the Tshwane River.</p>
+					</section>
+					<section class="row" id="urcsa-emblem" role="region">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<h3>Our Church's Emblem</h3>
+							<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" role="region">
+								<img class="img-responsive" alt="Emblem of URCSA. Contains a ship anchor in white color with a coastal lighhouse on the background in black color.
+									The top part of the ship anchor is aligned to the center of the coastal lighthouse and the bottom part of the ship anchor
+									is spread out on the bottom of the coastal lighhouse. Both the anchor and the lighthouse are within a branded circle which
+									is black in color and the background color within the circle is white. The outline of the circle contains the words 
+									'VERENIGENDE GEREFORMEERDE KERK IN SUIDER-AFRIKA' which is the Dutch language translation for 'Uniting Reformed Church in 
+									Southern Africa'. All the words are in white font-color in a black background. The circle is not joined at the bottom of the 
+									picture." src="assets/URCSAEmblem447x438.png">
+							</div>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" role="region">
+								<p>The lighthouse and the anchor were on the emblems of our two former churches when they were still separate. Now they have been 
+									joined together within a circle, which represents the love of God binding all people together. The African art pattern in the 
+									background expresses the fact that we are a church of Africa and for Africa.</p>
+								<p>Our name also contains the words Southern Africa because our church does not limit itself to the Republic of South Africa. 
+									The circle is open at the bottom, because church unity is not yet complete.</p>
+							</div>
 						</div>
-						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" role="region">
-							<p>The lighthouse and the anchor were on the emblems of our two former churches when they were still separate. Now they have been 
-								joined together within a circle, which represents the love of God binding all people together. The African art pattern in the 
-								background expresses the fact that we are a church of Africa and for Africa.</p>
-							<p>Our name also contains the words Southern Africa because our church does not limit itself to the Republic of South Africa. 
-								The circle is open at the bottom, because church unity is not yet complete.</p>
-						</div>
-					</div>
+					</section>
      			</section>
 				<section id="reverends" role="region">
 					<h2><i class="fas fa-chess-king"></i>&nbsp;Reverends</h2>
-					<div class="row">
+					<section class="row">
 						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" role="region">
 							<img class="img-responsive" alt="" src="assets/RevDrNthakhe359x239.jpg">
 						</div>
@@ -219,19 +227,8 @@
 							<p><strong>Contact Details</strong></p>	
 							<p>(012) 751-3355 [h] 083 394 5508</p>
 						</div>
-					</div><br>
-					<div class="row">
-						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" role="region">
-							<img class="img-responsive" alt="" src="assets/revJoin360x239.png">
-						</div>
-						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" role="region">
-							<p>Prof. JNJ Kritzinger [part-time minister]</p>
-							<p>Profile of reverand here...</p>
-							<p><strong>Contact Details</strong></p>						
-							<p>(012) 386-9737 [h] 082 297 9216</p>
-						</div>
-					</div><br>
-					<div class="row">
+					</section>
+					<section class="row">
 						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" role="region">
 							<img class="img-responsive" alt="" src="assets/RevMaruping359x239.png">
 						</div>
@@ -241,7 +238,7 @@
 							<p><strong>Contact Details</strong></p>							
 							<p>(012) 429 2384 [o] 076 960 3885</p>
 						</div>
-					</div>
+					</section>
 				</section>
 			</article>
 		</div>
@@ -293,7 +290,7 @@
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
 				<p>Copyright &copy; <abbr title="Uniting Reformed Church in Southern Africa">
 					URCSA</abbr>&nbsp;Melodi ya Tshwane 2018 | Website developed by
-					<a rel="author" href="#" target="_blank">MyT Communications Committee</a>
+					<a rel="author" href="#" target="_blank"><abbr title="Melodi ya Tshwane">MyT</abbr> Communications Committee</a>
 				</p>
 			</div>
 		</div>
@@ -338,6 +335,10 @@
 						</div>	
 						<div class="alert alert-info"><p>You can also use the contact information in 
 							'About us' to contact us.</p></div>
+							
+						<!-- Google ReCaptcha v2 -->
+						<div class="g-recaptcha" data-sitekey="6LdlQlkUAAAAALDpdpxwFkyxhHr9FHHOrHiSZyGV"></div>							
+							
 						<!-- Remember to change button type for 'Send' to 'submit' - for form -->
 						<button type="button" class="btn btn-primary">Send</button>		
 						<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>			
@@ -346,40 +347,6 @@
 			</div>
 		</div>
 	</div>				<!-- End 'Contact us' Modal -->
-	
-		<!-- 'Join Choir' Modal -->
-	<div id="myt-join-choir-modal" class="modal fade" tabindex="-1" role="dialog"
-		aria-labelledby="myt-join-choir-modal" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"
-						aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myt-join-choir-label">
-						Join Melodi ya Tshwane Choir</h4>
-				</div>
-				<div class="modal-body" id="mytContactForm">
-					<form method="post" role="form">
-						<div class="form-group">
-							<label>Name</label>
-							<input type="text" class="form-control" placeholder="Enter Full Name">
-						</div>
-						<div class="form-group">
-							<label>Phone</label>
-							<input type="tel" name="tel" class="form-control" placeholder="Enter Phone Number">
-						</div>
-						<div class="form-group">
-							<label>Email</label>
-							<input type="email" name="email" class="form-control" placeholder="Enter Email Address">
-						</div>	
-						<!-- Remember to change button type for 'Send' to 'submit' - for form -->
-						<button type="button" class="btn btn-primary">Join</button>		
-						<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>			
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>			<!-- End 'Join Choir' Modal -->
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> 	
