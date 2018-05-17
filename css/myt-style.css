@@ -89,6 +89,38 @@ p[title="Choir itunes"] > a:visited {
 	}
 }
 
+/* override color of btn-primary */
+.btn-primary {
+	color: #F8F8FF;
+	background-color: #B8860B;
+	border-color: #DAA520;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:hover,
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus {
+	color: #F8F8FF;
+	background-color: #DAA520;
+	border-color: #FFD700;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus{
+	color: #F8F8FF;
+	background-color: #D2B48C;
+	border-color: #F5DEB3;
+}
 
 /*==============================
 2. Grid and Layout
@@ -99,7 +131,12 @@ p[title="Choir itunes"] > a:visited {
 }
 
 /* spacing in between sections */
-article section{
+article > section{
+	padding-top: 15px;
+}
+
+/* spacing in between asides and any content*/
+aside{
 	padding-top: 15px;
 }
 
