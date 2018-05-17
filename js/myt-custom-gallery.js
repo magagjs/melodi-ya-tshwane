@@ -13,7 +13,7 @@ $(document).ready(function() {
 		orientation: 'potrait',
 		template: '<div class="col-lg-3 col-md-4 col-sm-5 col-xs-5">'+
 				  '<a href="{{image}}" title="{{caption}}" target="_blank">'+
-				  '<img src="{{image}}" alt="{{caption}}" class="img-responsive"></a>'+
+				  '<img src="{{image}}" alt="{{caption}}" class="img-rounded img-responsive"></a>'+
 				  '<p>{{caption}}</p></div>',
 				  
 		// load only photos from Instagram for the feed - no videos

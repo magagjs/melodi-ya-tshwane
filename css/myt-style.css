@@ -105,6 +105,7 @@ p[title="Choir itunes"] > a:visited {
 	color: #F8F8FF;
 	background-color: #B8860B;
 	border-color: #DAA520;
+	margin: 10px 0px 5px 10px;
 }
 
 .btn-primary:active,
@@ -196,7 +197,7 @@ footer > div {
 }
 
 footer a {
-	color: #00FFFF;				/* text color(Aqua) for links in page footer */
+	color: #00CED1;				/* text color(Aqua) for links in page footer */
 }
 
 footer a:visited {
@@ -250,12 +251,16 @@ header .navbar-default .navbar-toggle .icon-bar {
 }
 
 /* first level open navbar links */
-header .navbar-default .navbar-nav > .open > a,
+header .navbar-default .navbar-nav > .open > a{
+	color: #00CED1;
+}
 header .navbar-default .navbar-nav > .open > a:hover,
 header .navbar-default .navbar-nav > .open > a:focus {
-  color: #00FFFF;
-  background-color: #4E505D;
+	color: #00FFFF;
+	background-color: #4E505D;
 }
+
+
 
 /* last level open navbar links */
 header .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -316,11 +321,13 @@ header .toggle-search{
 	}
 	
 	/* first level open navbar links */
-	header .navbar-default .navbar-nav > .open > a,
+	header .navbar-default .navbar-nav > .open > a{
+		color:#00CED1;
+	}
 	header .navbar-default .navbar-nav > .open > a:hover,
 	header .navbar-default .navbar-nav > .open > a:focus {
-	  color: #00FFFF;
-	  background-color: #4E505D;
+		color: #00FFFF;
+		background-color: #4E505D;
 	}
 	
 	/* second level open navbar links */
