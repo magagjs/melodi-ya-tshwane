@@ -76,18 +76,29 @@ p[title="Choir itunes"] > a:visited {
 
 /* style key-value pairs  */
 @media (max-width: 480px){
-	#cmm-members .col-lg-4 p {
+	#cmm-members .col-lg-4 p, 
+	#cwm-members .col-lg-4 p{
 		font-weight: bold;
 	}
 	/* align rows straight in small screens - content must match and not hang */
-	#cmm-members .col-lg-8 p {
-		padding-top: 10px;
+	#cmm-members .col-lg-8 p, 
+	#cwm-members .col-lg-8 p{
+		padding-top: 12px;
 	}
 	/* dont apply style on first <p> child */
-	#cmm-members .col-lg-8 p:first-child{
+	#cmm-members .col-lg-8 p:first-child,
+	#cwm-members .col-lg-8 p:first-child{
 		padding-top: 0px;
 	}
 }
+
+/* level 3 headings in large devices must be vertically spaced to align content to vertical images */
+@media (min-width: 768px) {
+	#cmm-values-vision-mission h3 {
+		padding-top:22px;
+	}
+}
+
 
 /* override color of btn-primary */
 .btn-primary {
