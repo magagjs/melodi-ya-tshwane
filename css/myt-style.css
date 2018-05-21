@@ -134,12 +134,59 @@ p[title="Choir itunes"] > a:visited {
 	border-color: #F5DEB3;
 }
 
+/* change color of heading in announcements sidebar */
+article aside a,
+article aside a:visited,
+#announcements h2{
+	color: #B8860B;
+}
+
+/* remove default link behavior from accordion links */
+#accordion a,
+#accordion a:link,
+#accordion a:visited,
+#accordion a:hover,
+#accordion a:active{
+	color: #B8860B;
+	text-decoration: none;
+}
+
+
 /*==============================
 2. Grid and Layout
 ================================*/
-/* header must not hide main content */
+/* space main body vertically - navbar must not hide main content in large devices*/
 .main-body{
-	margin-top: 58px;
+	margin-top: 30px;
+}
+
+/* no spacing of main body immediately after carousel */
+.carousel + .main-body{
+	margin-top: 0px;
+}
+
+/* space main body vertically - navbar must not hide main content in small devices*/
+@media screen and (max-width: 480px){
+	.main-body{
+		margin-top: 50px;
+	}
+	
+	/* no spacing of main body immediately after carousel */
+	.carousel + .main-body{
+		margin-top: 0px;
+	}
+}
+
+/* space carousel vertically - navbar must not hide carousel */
+header + .carousel{
+	margin-top: 35px;
+}
+
+/* space carousel vertically - navbar must not hide carousel in small devices*/
+@media screen and (max-width: 480px){
+	header + .carousel{
+		margin-top: 55px;
+	}
 }
 
 /* spacing in between sections */
@@ -175,13 +222,6 @@ div .g-recaptcha {
 	}
 }
 
-/* header must not hide main content in small devices*/
-@media screen and (max-width: 767px){
-	.main-body{
-		margin-top: 58px;
-	}
-}
-
 
 /*==============================
 3. Header and Footer
@@ -189,15 +229,12 @@ div .g-recaptcha {
 footer {
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
-
-footer > div {
  	background-color: #4E505D;	/* background color for page footer */
-	color: #FFFFFF; 			/* text color(White) for page footer */
+	color: #FFFFFF; 		
 }
 
 footer a {
-	color: #00CED1;				/* text color(Aqua) for links in page footer */
+	color: #DAA520;				/* text color(Aqua) for links in page footer */
 }
 
 footer a:visited {
@@ -206,7 +243,8 @@ footer a:visited {
 
 footer a:hover,
 footer a:focus {
-	color: #00FFFF;				/* text color(Aqua) for hovering links in page footer */
+	/*color: #00FFFF;				 text color(Aqua) for hovering links in page footer */
+	color: #FFD700;
 }
 
 header{
@@ -237,7 +275,8 @@ header .navbar-default .navbar-nav > li > a{
 /* first level navbar links: hover display */
 header .navbar-default .navbar-nav > li > a:hover,
 header .navbar-default .navbar-nav > li > a:focus {
-  	color: #00FFFF;
+	/*color: #00FFFF;				 text color(Aqua) for hovering links in page footer */
+	color: #FFD700;
 }
 
 /* first level navbar links: display after hover */
@@ -256,11 +295,10 @@ header .navbar-default .navbar-nav > .open > a{
 }
 header .navbar-default .navbar-nav > .open > a:hover,
 header .navbar-default .navbar-nav > .open > a:focus {
-	color: #00FFFF;
+	/*color: #00FFFF;				 text color(Aqua) for hovering links in page footer */
+	color: #FFD700;
 	background-color: #4E505D;
 }
-
-
 
 /* last level open navbar links */
 header .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -311,7 +349,8 @@ header .toggle-search{
 	/* first level navbar links: hover display */
 	header .navbar-default .navbar-nav > li > a:hover,
 	header .navbar-default .navbar-nav > li > a:focus {
-	  	color: #00FFFF;			
+		/*color: #00FFFF;				 text color(Aqua) for hovering links in page footer */
+		color: #FFD700;		
 	}
 	
 	/* first level navbar links: display after hover */
@@ -326,7 +365,8 @@ header .toggle-search{
 	}
 	header .navbar-default .navbar-nav > .open > a:hover,
 	header .navbar-default .navbar-nav > .open > a:focus {
-		color: #00FFFF;
+		/*color: #00FFFF;				 text color(Aqua) for hovering links in page footer */
+		color: #FFD700;
 		background-color: #4E505D;
 	}
 	
@@ -370,15 +410,36 @@ a.scrollIcon {
 	text-align: center;
 }
 
+/* display search button in white font */
+.toggle-search a i {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
 /* display search box */
 .search-box-display{
 	display: block;
 }
 
+
 /* hide search box */
 .search-box-hide{
 	display: none;
 }
+
+.navbar-brand-hide{
+	display: none;
+}
+
+.toggle-search-hide{
+	display: none;
+}
+
+.navbar-header-hide{
+	display: none;
+}
+
+
 
 /*=================================
 5. Animation and Popups: Navbar
@@ -472,6 +533,38 @@ a.scrollIcon {
   backface-visibility: visible !important;
 }
 
+/* add fading animation to carousel */
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
 
 /*==============================
 Plugins, iFrames and Widgets

@@ -31,7 +31,7 @@
 	<meta property="og:image:width" content="256"> 
 	<meta property="og:image:height" content="60"> 
 	<meta property="og:image:type" content="image/jpeg"> 
-	<meta property="og:image" content="https://magags.github.io/myt/assets/CWMEmblemMainOGImage.jpg">
+	<meta property="og:image" content="https://magags.github.io/myt/assets/cwmOG200x200.jpg">
 	<meta property="og:image:alt" content="An emblem of URCSA Melodi ya Tshwane Christian Women's Ministry" />
 	<!-- Twitter Cards for Social Media Optimisation on Twitter -->
 	<meta name="twitter:card" content="summary">
@@ -40,7 +40,7 @@
 	<meta name="twitter:title" content="URCSA Melodi ya Tshwane CWM">
 	<meta name="twitter:description" content="URCSA Melodi ya Tshwane Christian Women's Ministry 
 		(CWM) information and profile. Join URCSA MyT at https://magags.github.io/myt/">
-	<meta name="twitter:image" content="https://magags.github.io/myt/assets/CWMEmblemMainOGImage.jpg">
+	<meta name="twitter:image" content="https://magags.github.io/myt/assets/cwmOG200x200.jpg">
 	<meta name="twitter:image:alt" content="An emblem of URCSA Melodi ya Tshwane Christian Women's Ministryv">
 	
 	<title>Melodi ya Tshwane|Ministries</title>
@@ -67,7 +67,8 @@
 						src="assets/mytLogo53x51.jpeg">
 				</a>
 				<div class="toggle-search btn btn-default">
-					<i class="glyphicon glyphicon-search"></i>
+					<span class="sr-only">Top Navigation Search Button</span>
+					<a href="index.html#search-box"><i id="search-button" class="glyphicon glyphicon-search"></i></a>
 				</div>
 				<div class="navbar-header myt-cen-txt">
 					<span class="sr-only">Top Navigation</span>
@@ -80,21 +81,31 @@
 							<span class="myt-white-font"><b>MENU</b></span>
 					</button>
 				</div>
+				<!-- Toggable Search box -->
+				<div id="search-box" class="search-box-hide pull-right">	
+					<form style="margin-top: 5px" action="index.html" method="post" role="search">
+						<div class="form-group has-feedback has-feedback-right">
+							<input id="search-box-input" type="search" name="search" size="10" 
+								class="form-control" placeholder="Type & Enter" aria-lable="Search">
+							<i class="glyphicon glyphicon-search form-control-feedback"></i>
+						</div>
+					</form>
+				</div> <!-- End Toggable Search box -->					
 				<div class="collapse navbar-collapse" id="myt-navbar-collapse">	<!-- MenuBar Section -->
 					<ul class="nav navbar-nav" role="menubar">
 						<li role="menuitem" aria-labelledby="homeLink"><a href="index.html" role="link">
 							<span id="homeLink">Home</span></a></li>
 						<li class="dropdown" role="menuitem" aria-labelledby="about-us-label" aria-haspopup="true">
-							<a href="aboutUs.html" class="dropdown-toggle" data-toggle="dropdown">
+							<a href="aboutus.html" class="dropdown-toggle" data-toggle="dropdown">
 								<span id="about-us-label">About us</span>
 								<b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu">
-								<li role="menuitem"><a href="aboutUs.html#vision" role="link" aria-labelledby="history-link">
+								<li role="menuitem"><a href="aboutus.html#vision" role="link" aria-labelledby="history-link">
 									<span id="history-link">Vision</span></a></li>
-								<li role="menuitem"><a href="aboutUs.html#history" role="link" aria-labelledby="vision-link">
+								<li role="menuitem"><a href="aboutus.html#history" role="link" aria-labelledby="vision-link">
 									<span id="vision-link">History</span></a></li>
-								<li role="menuitem"><a href="aboutUs.html#reverends" role="link" aria-labelledby="reverend-link">
+								<li role="menuitem"><a href="aboutus.html#reverends" role="link" aria-labelledby="reverend-link">
 									<span id="reverend-link">Reverends</span></a></li>
 							</ul>
 						</li>
@@ -126,7 +137,7 @@
 								<b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu">
-								<li role="menuitem"><a href="congregation.html#announcements" role="link" aria-labelledby="announcement-link">
+								<li role="menuitem"><a href="announcements.html" role="link" aria-labelledby="announcement-link">
 									<span id="announcement-link">Announcements</span></a></li>
 								<li role="menuitem"><a href="congregation.html#events" role="link" aria-labelledby="events-link">
 									<span id="events-link">Events</span></a></li>
@@ -148,42 +159,25 @@
 	</header>				<!-- End Header Section -->
 	<div class="container clearfix main-body" role="main">		<!-- Main Body Container -->
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<div class="row">
-				<!-- Warning that this is just a demo website and not a live website -->
-				<div class="alert alert-warning myt-cen-txt" role="alert" 
-					aria-labelledby="myt-demo-warning">
-					<p><strong><span id="myt-demo-warning">WARNING! THIS IS A DEMO WEBSITE!!</span></strong></p>
-				</div>
-			</div>
-			<div id="search-box" class="row search-box-hide myt-cen-txt">
-				<form style="margin-top: 5px" action="index.html" method="post" 
-					role="search">
-					<div class="form-group has-feedback has-feedback-right">
-						<input type="search" name="search" 
-							class="form-control" placeholder="Type the search words and press Enter">
-						<i class="glyphicon glyphicon-search form-control-feedback"></i>
-					</div>
-				</form>
-			</div>
 			<article class="row" role="main">
 				<h1>CWM &amp; CWL</h1>
 				<section id="cwm" role="region">
 					<h2>Christian Women’s Ministry (<abbr title="Christian Women’s Ministry">CWM</abbr>)</h2>
 					<div class="row">
 						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12" role="region">
-							<img class="img-responsive" src="assets/CWMEmblemMain.jpg" alt="URCSA Melodi Ya Tshwane Christian Women's Ministry 
+							<img class="img-responsive" src="assets/cwmEmblem948x956.jpg" alt="URCSA Melodi Ya Tshwane Christian Women's Ministry 
 								Emblem. Black and in color and similar to URCSA Emblem but the anchor is black surrounded by a white border and 
 								the lighthouse is also black. At the bottom of the emblem lies the acronym 'CWM' in black font inside an arc with a 
 								black border. Below are is the CWM motto which read 'IN SERVICE OF CHRIST AND HIS CHURCH', it is in black font.">
 						</div>
-						<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" role="region">	<!-- Start Image to Text Align -->
+						<section id="cwm-vision-responsibilities" class="col-lg-7 col-md-7 col-sm-12 col-xs-12" role="region">	<!-- Start Image to Text Align -->
 							<h3 style="margin-top:5px">CWM Vision</h3>
 							<p>“Rooted in Belhar": <abbr title="Christian Women’s Ministry">CWM</abbr> Melodi ya Tshwane (<abbr title="Melodi ya Tshwane">MyT</abbr>) 
 								is a ministry of God-fearing women, whose sole purpose is to serve God and His people. As a special ministry we align our activities 
 								with the theme of the <abbr title="Melodi ya Tshwane">MyT</abbr> congregation and the Constitution of the <abbr 
 								title="Christian Women’s Ministry">CWM</abbr>. In 2016 all our prayer meetings and Bible Studies were based on encouraging our 
 								members to be rooted in Belhar.</p>
-							<h3>CWM Responsibilities and Members</h3>
+							<h3>CWM Responsibilities</h3>
 							<p>We hold our weekly prayer meeting every Sunday after the Sunday church service from 12:10pm at Cnr Bosman and Madiba 
 								Street. Our meetings are held on Sundays instead of Thursdays because most of our members are employed fulltime and 
 								cannot attend during the week.</p>
@@ -193,7 +187,7 @@
 							<p>We are one of the fortunate <abbr title="Uniting Reformed Church in Southern Africa">URCSA</abbr> congregations to be blessed 
 								with three ministers (Dr TJ Nthakhe, Prof JNJ Kritzinger  and Rev P Maruping) together with their spouses (Bo-Mma Moruti – 
 								Ms T Nthake, Prof A Kritzinger, Ms D Maruping as well as Dr M Mathebula).</p>						
-						</div>	<!-- End Image to Text Align -->
+						</section>	<!-- End Image to Text Align -->
 					</div>
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -211,6 +205,136 @@
 									2016 it was the induction and robing ceremony of Mma Moruti Tshidi Nthakhe  together with two new members. The sermon of the day was 
 									delivered by Mma Moruti Molawa from <abbr title="Uniting Reformed Church in Southern Africa">URCSA</abbr> Tshwane congregation who is 
 									a mentor to Mma Moruti Nthakhe. Mma Moruti Thobela from Nelmapius congregation gave words of encouragement.</p>
+							</section>
+							<section class="row" id="cwm-uniform" role="region">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<h3>The meaning of CWM Uniform</h3>
+									<p> The uniform consists of a black long-sleeved, collar-less approved jacket and black approved straight skirt, a white semi-circle 
+										collar with approved pin with the logo of the CWM, a black approved CWM hat and black shoes and black stockings.<p>
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+											<img class="img-rounded img-responsive" src="assets/cwmUniform960x668.jpg" alt="Women wearini URCSA CWM uniform 
+												posing in two rows. The first row consisist 11 women sitting and the second row row consists of 15 women
+												standing. On the background there is decoration similar to tent decor." >
+										</div>
+									</div>
+									<p>The following questions are frequently asked:</p>
+									<div id="accordion" class="panel-group">	<!-- Begin Accordion -->
+										<div class="panel panel-default">		<!-- Panel 1 -->
+											<!-- Heading 1 -->
+											<div class="panel-heading" id="heading1">
+												<h5 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" 
+														aria-controls="#collapse1">
+														<i class="fas fa-plus"></i>&nbsp;Why do CWM women wear a white collar?
+													</a>
+												</h5>
+											</div>
+											<!-- Content 1 -->
+											<div id="collapse1" class="panel-collapse collapse" aria-labelledby="heading1" data-parent="#accordion">
+												<div class="panel-body">
+													<p>The white collar is a symbol/sign of peace which transcends all understanding and which can be provided by Jesus Christ 
+													(John 14:27, Matthew 5:9).</p>
+												</div>
+											</div>
+										</div>								<!-- End Panel 1 -->
+										<div class="panel panel-default">	<!-- Panel 2 -->
+											<!-- Heading 2 -->
+											<div class="panel-heading" id="heading2">
+												<h5 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" 
+														aria-controls="#collapse2">
+														<i class="fas fa-plus"></i>&nbsp;Why do CWM women wear black shoes and stockings, a black 
+															jacket with only 5 black buttons and two pockets and a black hat on their heads?
+													</a>
+												</h5>
+											</div>
+											<!-- Content 2 -->
+											<div id="collapse2" class="panel-collapse collapse" aria-labelledby="heading2" data-parent="#accordion">
+												<div class="panel-body">
+													<ul>
+														<li>The jacket, skirt, shoes and stockings are black as an indication of the sinful nature of 
+															human beings and that only the blood of Jesus can wash away our sins (Ephesians 5:8-11, Colossians 3:5-11).</li>
+														<li>The 5 buttons indicate the five wounds of Jesus, namely the hands and feet of Jesus, as well as His side was 
+															pierced through for our sins (John 19:33, Luke 24:39, Isaiah 53:5).</li>
+														<li>The two pockets on the jacket are an indication that Christian women are not supposed to harm others, but should 
+															rather be peacemakers. We should therefore put our swords back into our sheaths. 
+															<q><em>But Jesus said to Peter, "Put your sword back into its sheath."</em></q> (Matt 26:52, Matt 18:22, John 18:11).</li>
+														<li>The black hat is an indication that our problems, grief, worry as Christian women need to be entrusted to Jesus 
+															Christ who is the only Head of his church. <q><em>Come unto me, all ye that labor and are heavy laden, and I will give you rest. 
+															Take my yoke upon you, and learn of me; for I am meek and lowly in heart: and ye shall find rest unto your souls. For my yoke is 
+															easy, and my burden is light.</em></q> (Matthew 11:28-30, Matthew 11:12, Isaiah 41:10).</li>
+													</ul>
+												</div>
+											</div>
+										</div>								<!-- End Panel 2 -->
+										<div class="panel panel-default">	<!-- Panel 3 -->
+											<!-- Heading 3 -->
+											<div class="panel-heading" id="heading3">
+												<h5 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" 
+														aria-controls="#collapse3">
+														<i class="fas fa-plus"></i>&nbsp;Why is it that CWM women do not wear any jewelry or makeup when they put on the uniform? 
+													</a>
+												</h5>
+											</div>
+											<!-- Content 3 -->
+											<div id="collapse3" class="panel-collapse collapse" aria-labelledby="heading3" data-parent="#accordion">
+												<div class="panel-body">
+													<p>The absence of outward adornment, cosmetics, gold and silver suggests to women that their beauty should not come from outward 
+														adornment. They should rather be adorned with the Holy Spirit. <q><em>"Your beauty should not come from outward adornment, such as 
+														braided hair and the wearing of gold jewelry and fine clothes. For Instead, it should be that of your inner self, the unfading beauty of a 
+														gentle and quiet spirit, which is of great worth in God's sight...</em></q> (1 Pet 3:3-4). Peter does not forbid all adornment. For the godly 
+														woman the emphasis is always on inward adornment. The uniform is thus a symbol of simplicity, minimalism, plainness and unfussiness as well as 
+														devotion to Jesus Christ. Not all women in the former DRCA or even the URCSA are obliged to wear the uniform. The wearing of the uniform 
+														is optional.</p>
+												</div>
+											</div>
+										</div>								<!-- End Panel 3 -->
+										<div class="panel panel-default">	<!-- Panel 4 -->
+											<!-- Heading 4 -->
+											<div class="panel-heading" id="heading4">
+												<h5 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" 
+														aria-controls="#collapse4">
+														<i class="fas fa-plus"></i>&nbsp;Are those wearing the uniform more holier than those not being cladded? 
+													</a>
+												</h5>
+											</div>
+											<!-- Content 4 -->
+											<div id="collapse4" class="panel-collapse collapse" aria-labelledby="heading4" data-parent="#accordion">
+												<div class="panel-body">
+													<p>The uniform puts everyone, rich and poor, white and black on the same level as a people who regardless of their background, status 
+														or culture commit themselves only to Jesus Christ as their Lord and Saviour. The uniform has thus symbolic meaning for those who wear 
+														it. This is however, not a free pass to heaven. 
+														<q>Jesus answered, "I am the way and the truth and the life. No one comes to the Father except through me.</q> (John 14:6).</p>
+												</div>
+											</div>
+										</div>								<!-- End Panel 4 -->
+										<div class="panel panel-default">	<!-- Panel 5 -->
+											<!-- Heading 5 -->
+											<div class="panel-heading" id="heading4">
+												<h5 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" 
+														aria-controls="#collapse5">
+														<i class="fas fa-plus"></i>&nbsp;Who wears the uniform?  
+													</a>
+												</h5>
+											</div>
+											<!-- Content 5 -->
+											<div id="collapse5" class="panel-collapse collapse" aria-labelledby="heading5" data-parent="#accordion">
+												<div class="panel-body">
+													<p>Only members who have been on trial for six months or more will be clothed. The uniform also breaks the boundaries between 
+														rich and poor (have's and have not’s). There is therefore no distinction between those who can afford beautiful, expensive 
+														clothes (especially on conferences) and those who cannot afford it or like for instance in the past between the missionary's 
+														wife (white pastors wife) and the members of the Manyano (i.e. CWM members). The uniform is only to be worn at the CWM gatherings 
+														including meetings, funerals of uniformed members, church building inaugurations and welcoming functions of leaders in the church, 
+														Holy Communion, CMM gatherıngs and CYM gatherings.</p>
+												</div>
+											</div>
+										</div>	<!-- End Panel 5 -->																																											
+									</div>	<!-- End Accordion -->
+								</div>
 							</section>
 							<section id="cwm-social" role="region">
 								<h3>Social Activities</h3>
@@ -245,10 +369,11 @@
 										<p>Mme Sibeko</p>
 									</div>	
 									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-										<img class="img-rounded img-responsive" src="assets/CWMMembers.jpg" alt="Image of 8 Women in URCSA CWM 
+										<img class="img-rounded img-responsive" src="assets/cwmMembers768x960.jpg" alt="Image of 8 Women in URCSA CWM 
 											uniform - a white shoul over a black top. Only the top body from the waist up is shown for each woman. 
 											The image is divided into 8 squares where each woman is shown in their own square. At the bottom of each 
-											square, the title that the woman holds in the executive committee of URCSA MyT CWM is written in red font.">
+											square, the title that the woman holds in the executive committee of URCSA MyT CWM is written in red font."
+											style="width:640; height:480;">
 									</div>							
 								</div>
 							</section>
@@ -310,6 +435,15 @@
 					<p><a href="#" target="_blank" role="link" aria-labelledby="google-play-link">
 						<img class="img-responsive center-block" src="assets/googlePlayBadge320x200.png" alt="Google Play badge, 
 							black with transparent background and contains Google Play logo and the the words: GET IT ON GOOLGLE PLAY"/></a></p>
+					<p style="font-size:130%">
+						<a href="https://www.facebook.com/melodiyatshwane/" target="_blank" role="link" aria-labelledby="facebook-link">
+							<i class="fab fa-facebook"></i></a>&nbsp;
+						<a href="https://twitter.com/urcsamyt" target="_blank" role="link" aria-labelledby="twitter-link">
+							<i class="fab fa-twitter-square"></i></a>&nbsp;
+						<a href="https://www.instagram.com/urcsamyt/" target="_blank" role="link" aria-labelledby="instagram-link">
+							<i class="fab fa-instagram"></i></a>&nbsp;
+						<a href="https://www.youtube.com/channel/UCYT4hwfjKNDJ_2gCSLeQARQ" target="_blank" role="link" aria-labelledby="youtube-link">
+							<i class="fab fa-youtube-square"></i></a>&nbsp;&nbsp;&nbsp;</p>							
 				</div>
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
@@ -324,11 +458,6 @@
 		</div>
 	</footer>	<!-- End Footer -->
 	
-	<!-- Warning that this is just a demo website and not a live website -->
-	<div class="alert alert-warning container myt-cen-txt" role="alert" 
-		aria-labelledby="mytDemoWarningBottom">
-		<p><strong><span id="mytDemoWarningBottom">WARNING! THIS IS A DEMO WEBSITE!!</span></strong></p>
-	</div>
 	<a class="scrollIcon" href="#myt-Top-Page">		<!-- Scroll back to top icon -->
 		<i class="glyphicon glyphicon-triangle-top"></i></a>
 	

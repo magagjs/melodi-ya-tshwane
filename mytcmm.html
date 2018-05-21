@@ -30,7 +30,7 @@
 	<meta property="og:image:width" content="256"> 
 	<meta property="og:image:height" content="60"> 
 	<meta property="og:image:type" content="image/jpeg"> 
-	<meta property="og:image" content="https://magags.github.io/myt/assets/CMMEmblemBlackOGImage.png">
+	<meta property="og:image" content="https://magags.github.io/myt/assets/cmmEmblemOG200x200.png">
 	<meta property="og:image:alt" content="An emblem of URCSA Melodi ya Tshwane Christian Men's Ministry" />
 	<!-- Twitter Cards for Social Media Optimisation on Twitter -->
 	<meta name="twitter:card" content="summary">
@@ -39,7 +39,7 @@
 	<meta name="twitter:title" content="URCSA Melodi ya Tshwane CMM">
 	<meta name="twitter:description" content="URCSA Melodi ya Tshwane Christian Men's Ministry 
 		(CMM) information and profile. Join URCSA MyT at https://magags.github.io/myt/">
-	<meta name="twitter:image" content="https://magags.github.io/myt/assets/CMMEmblemBlackOGImage.png">
+	<meta name="twitter:image" content="https://magags.github.io/myt/assets/cmmEmblemOG200x200.png">
 	<meta name="twitter:image:alt" content="An emblem of URCSA Melodi ya Tshwane Christian Men's Ministry">
 	
 	<title>Melodi ya Tshwane|CMM</title>
@@ -66,7 +66,8 @@
 						src="assets/mytLogo53x51.jpeg">
 				</a>
 				<div class="toggle-search btn btn-default">
-					<i class="glyphicon glyphicon-search"></i>
+					<span class="sr-only">Top Navigation Search Button</span>
+					<a href="index.html#search-box"><i id="search-button" class="glyphicon glyphicon-search"></i></a>
 				</div>
 				<div class="navbar-header myt-cen-txt">
 					<span class="sr-only">Top Navigation</span>
@@ -79,21 +80,31 @@
 							<span class="myt-white-font"><b>MENU</b></span>
 					</button>
 				</div>
+				<!-- Toggable Search box -->
+				<div id="search-box" class="search-box-hide pull-right">	
+					<form style="margin-top: 5px" action="index.html" method="post" role="search">
+						<div class="form-group has-feedback has-feedback-right">
+							<input id="search-box-input" type="search" name="search" size="10" 
+								class="form-control" placeholder="Type & Enter" aria-lable="Search">
+							<i class="glyphicon glyphicon-search form-control-feedback"></i>
+						</div>
+					</form>
+				</div> <!-- End Toggable Search box -->					
 				<div class="collapse navbar-collapse" id="myt-navbar-collapse">	<!-- MenuBar Section -->
 					<ul class="nav navbar-nav" role="menubar">
 						<li role="menuitem" aria-labelledby="homeLink"><a href="index.html" role="link">
 							<span id="homeLink">Home</span></a></li>
 						<li class="dropdown" role="menuitem" aria-labelledby="about-us-label" aria-haspopup="true">
-							<a href="aboutUs.html" class="dropdown-toggle" data-toggle="dropdown">
+							<a href="aboutus.html" class="dropdown-toggle" data-toggle="dropdown">
 								<span id="about-us-label">About us</span>
 								<b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu">
-								<li role="menuitem"><a href="aboutUs.html#vision" role="link" aria-labelledby="history-link">
+								<li role="menuitem"><a href="aboutus.html#vision" role="link" aria-labelledby="history-link">
 									<span id="history-link">Vision</span></a></li>
-								<li role="menuitem"><a href="aboutUs.html#history" role="link" aria-labelledby="vision-link">
+								<li role="menuitem"><a href="aboutus.html#history" role="link" aria-labelledby="vision-link">
 									<span id="vision-link">History</span></a></li>
-								<li role="menuitem"><a href="aboutUs.html#reverends" role="link" aria-labelledby="reverend-link">
+								<li role="menuitem"><a href="aboutus.html#reverends" role="link" aria-labelledby="reverend-link">
 									<span id="reverend-link">Reverends</span></a></li>
 							</ul>
 						</li>
@@ -147,35 +158,18 @@
 	</header>				<!-- End Header Section -->
 	<div class="container clearfix main-body" role="main">		<!-- Main Body Container -->
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<div class="row">
-				<!-- Warning that this is just a demo website and not a live website -->
-				<div class="alert alert-warning myt-cen-txt" role="alert" 
-					aria-labelledby="myt-demo-warning">
-					<p><strong><span id="myt-demo-warning">WARNING! THIS IS A DEMO WEBSITE!!</span></strong></p>
-				</div>
-			</div>
-			<div id="search-box" class="row search-box-hide myt-cen-txt">
-				<form style="margin-top: 5px" action="index.html" method="post" 
-					role="search">
-					<div class="form-group has-feedback has-feedback-right">
-						<input type="search" name="search" 
-							class="form-control" placeholder="Type the search words and press Enter">
-						<i class="glyphicon glyphicon-search form-control-feedback"></i>
-					</div>
-				</form>
-			</div>
 			<article class="row" role="main">
 				<h1>CMM</h1>
 				<section id="cmm" role="region">
 					<h2 style="margin-top:0px;">Christian Men's Ministry (<abbr title="Christian Men's Ministry">CMM</abbr>)</h2>
 					<div id="cmm-values-vision-mission" class="row">
 						<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-							<img class="img-responsive" src="assets/CMMEmblemMain.png" alt="URCSA Melodi Ya Tshwane Christian Men's Ministry 
+							<img class="img-responsive" src="assets/cmmEmblemMain369x438.png" alt="URCSA Melodi Ya Tshwane Christian Men's Ministry 
 								Emblem. Black and white in color and similar to URCSA Emblem but has the acronym 'CMM' at the bottom of the 
 								emblem. The acronym is written in white font inside an arc with a black background color.">
 							<p style="padding-left:90px;">
 								<strong>BINA <abbr title="Christian Men's Ministry">CMM</abbr> BINA!!!</strong></p>	
-							<img style="padding-left:72px;" class="img-responsive" src="assets/CMMEmblemBlack.png" alt="URCSA Melodi Ya Tshwane 
+							<img style="padding-left:72px;" class="img-responsive" src="assets/cmmEmblem182x180.png" alt="URCSA Melodi Ya Tshwane 
 								Christian Men's Ministry Emblem. Black, white and brown in color and similar to URCSA Emblem but enclosed in a 
 								white square border which is also enclosed in a black square border. Below the emblem is the arconym 'CMM' written 
 								in brown font and is also enclosed within the white colored square border.">						
@@ -228,7 +222,7 @@
 								</ul>
 							</section>
 							<div class="center-block">
-								<img class="img-rounded img-responsive" src="assets/MinistriesCMM.jpg"
+								<img class="img-rounded img-responsive" src="assets/cmmMinistry1280x720.jpg"
 									alt="Image of 11 Men in URCSA CMM uniform - a white shirt, black suit and black long pants. 
 									The mend are standing in front of the church podium that is decorated with a cloth written 
 									'Ruri Moren o tsohile'. One of the men is standing in front of other and is talking on a microphone." >							
@@ -303,6 +297,15 @@
 					<p><a href="#" target="_blank" role="link" aria-labelledby="google-play-link">
 						<img class="img-responsive center-block" src="assets/googlePlayBadge320x200.png" alt="Google Play badge, black with 
 							transparent background and contains Google Play logo and the the words: GET IT ON GOOLGLE PLAY"/></a></p>
+					<p style="font-size:130%">
+						<a href="https://www.facebook.com/melodiyatshwane/" target="_blank" role="link" aria-labelledby="facebook-link">
+							<i class="fab fa-facebook"></i></a>&nbsp;
+						<a href="https://twitter.com/urcsamyt" target="_blank" role="link" aria-labelledby="twitter-link">
+							<i class="fab fa-twitter-square"></i></a>&nbsp;
+						<a href="https://www.instagram.com/urcsamyt/" target="_blank" role="link" aria-labelledby="instagram-link">
+							<i class="fab fa-instagram"></i></a>&nbsp;
+						<a href="https://www.youtube.com/channel/UCYT4hwfjKNDJ_2gCSLeQARQ" target="_blank" role="link" aria-labelledby="youtube-link">
+							<i class="fab fa-youtube-square"></i></a>&nbsp;&nbsp;&nbsp;</p>							
 				</div>
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 myt-cen-txt">
@@ -316,12 +319,7 @@
 			</div>
 		</div>
 	</footer>	<!-- End Footer -->
-	
-	<!-- Warning that this is just a demo website and not a live website -->
-	<div class="alert alert-warning container myt-cen-txt" role="alert" 
-		aria-labelledby="mytDemoWarningBottom">
-		<p><strong><span id="mytDemoWarningBottom">WARNING! THIS IS A DEMO WEBSITE!!</span></strong></p>
-	</div>
+
 	<a class="scrollIcon" href="#myt-Top-Page">		<!-- Scroll back to top icon -->
 		<i class="glyphicon glyphicon-triangle-top"></i></a>
 	
