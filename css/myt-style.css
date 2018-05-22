@@ -28,10 +28,28 @@ h6,
 	font-family: 'Raleway', sans-serif;
 }
 
-/* style level 1 headings */
-h1, .h1{
-	background-color: #4E505D;	/* background color for level 1 headings */
+/* h1 heading colors */
+h1{
+	background-color: #4E505D;	
 	color: #FFFFFF; 			/* text color(White) for level 1 headings */
+}
+
+/* h2 heading and h2 links */
+h2,
+h2 > a {
+	color: #B8860B;			/* text color(Dark Gold) for level 1 headings */
+}
+
+/* h2 link color on active, hover and focus */
+h2 > a:active,
+h2 > a:hover,
+h2 > a:hover{
+	color: #FFD700;
+}
+
+/* h3 heading links */
+h3 > a{
+	color: #4E505D;
 }
 
 .myt-cen-txt{					
@@ -103,11 +121,12 @@ p[title="Choir itunes"] > a:visited {
 /* override color of btn-primary */
 .btn-primary {
 	color: #F8F8FF;
-	background-color: #B8860B;
+	background-color: c
 	border-color: #DAA520;
 	margin: 10px 0px 5px 10px;
 }
 
+/* override color of btn-primary behaviours*/
 .btn-primary:active,
 .btn-primary.active,
 .btn-primary:focus,
@@ -122,6 +141,7 @@ p[title="Choir itunes"] > a:visited {
 	border-color: #FFD700;
 }
 
+/* override color of btn-primary behaviours*/
 .btn-primary.disabled,
 .btn-primary[disabled],
 .btn-primary.disabled:hover,
@@ -301,10 +321,31 @@ header .navbar-default .navbar-nav > .open > a:focus {
 }
 
 /* last level open navbar links */
+header .navbar-default .navbar-nav .open .dropdown-menu > li .active,
 header .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 header .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #FFFFFF;
-    background-color: #4E505D;
+    background-color: #4E505D; 
+}
+
+/* last level hover navbar links without open*/
+header .navbar-default .navbar-nav .dropdown-menu > li .active,
+header .navbar-default .navbar-nav .dropdown-menu > li > a:hover,
+header .navbar-default .navbar-nav .dropdown-menu > li > a:focus {
+    color: #FFFFFF;
+    background-color: #4E505D; 
+}
+
+/* last level active dropdown menu */
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+	background-color: #4E505D;
+}
+
+/* make dropdowns open on hover */
+.dropdown:hover .dropdown-menu {
+   display: block;
 }
 
 header .navbar-toggle{
@@ -416,29 +457,31 @@ a.scrollIcon {
 	font-weight: bold;
 }
 
-/* display search box */
+/* hide search button - Search onclick behaviour*/
+.toggle-search-hide{
+	display: none;
+}
+
+/* display search box - Search onclick behaviour */
 .search-box-display{
 	display: block;
 }
 
 
-/* hide search box */
+/* hide search box - Search onclick behaviour*/
 .search-box-hide{
 	display: none;
 }
 
+/* hide organisation navbar branding (logo) - Search onclick behaviour*/
 .navbar-brand-hide{
 	display: none;
 }
 
-.toggle-search-hide{
-	display: none;
-}
-
+/* hide navbar Menu on small devices - Search onclick behaviour*/
 .navbar-header-hide{
 	display: none;
 }
-
 
 
 /*=================================

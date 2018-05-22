@@ -93,10 +93,9 @@
 					<ul class="nav navbar-nav" role="menubar">
 						<li role="menuitem" aria-labelledby="homeLink"><a href="index.html" role="link">
 							<span id="homeLink">Home</span></a></li>
-						<li class="dropdown" role="menuitem" aria-labelledby="about-us-label" aria-haspopup="true">
-							<a href="aboutus.html" class="dropdown-toggle" data-toggle="dropdown">
-								<span id="about-us-label">About us</span>
-								<b class="caret"></b>
+						<li class="dropdown" role="menuitem" aria-labelledby="aboutus-link" aria-haspopup="true">
+							<a href="aboutus.html" role="link" aria-labelledby="aboutus-link">
+								<span id="aboutus-link">About us</span><b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu">
 								<li role="menuitem"><a href="aboutus.html#vision" role="link" aria-labelledby="history-link">
@@ -110,9 +109,8 @@
 						<li role="menuitem" aria-labelledby="homeLink">
 							<a href="gallery.html" role="link" aria-labelledby="gallery-link">
 								<span id="gallery-link">Gallery</span></a></li>
-						<li  class="dropdown active" role="menuitem" aria-labelledby="ministries-label" aria-haspopup="true">
-							<a href="ministries.html" class="dropdown-toggle" data-toggle="dropdown"
-								role="link" aria-labelledby="ministries-label">
+						<li  class="dropdown active" role="menuitem" aria-labelledby="ministries-link" aria-haspopup="true">
+							<a href="ministries.html" role="link" aria-labelledby="ministries-link" >
 								<span id="ministries-link">Ministries</span><b class="caret"></b>
 							</a>   
 							<ul class="dropdown-menu" role="menu">
@@ -120,19 +118,17 @@
 									<span id="cwm-link">CWM</span></a></li>
 								<li role="menuitem"><a href="mytcmm.html" role="link" aria-labelledby="cmm-link">
 									<span id="cmm-link">CMM</span></a></li>
-								<li role="menuitem"><a href="unavailable.html" role="link" aria-labelledby="cym-link">
+								<li role="menuitem"><a href="mytcym.html" role="link" aria-labelledby="cym-link">
 									<span id="cym-link">CYM</span></a></li>
 								<li role="menuitem"><a href="choir.html" role="link" aria-labelledby="choir-link">
 									<span id="choir-link">Choir</span></a></li>
-								<li role="menuitem"><a href="unavailable.html" role="link" aria-labelledby="myt-youth-link">
+								<li role="menuitem"><a href="mytyouth.html" role="link" aria-labelledby="myt-youth-link">
 									<span id="myt-youth-link">MyT Youth</span></a></li>
 							</ul>									
 						</li>										
-						<li class="dropdown" role="menuitem">
-							<a href="congregation.html" class="dropdown-toggle" data-toggle="dropdown" 
-								role="link" aria-labelledby="congregation-label">
-									<span id="congregation-label">Congregation</span>
-								<b class="caret"></b>
+						<li class="dropdown" role="menuitem" aria-labelledby="congregation-link" aria-haspopup="true">
+							<a href="congregation.html" role="link" aria-labelledby="congregation-link">
+									<span id="congregation-link">Congregation</span><b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu">
 								<li role="menuitem"><a href="congregation.html#announcements" role="link" aria-labelledby="announcement-link">
@@ -142,7 +138,7 @@
 								<li role="menuitem"><a href="congregation.html#committees" role="link" aria-labelledby="committees-link">
 									<span id="committees-link">Committees</span></a></li>
 								<li role="menuitem"><a href="congregation.html#wards" role="link" aria-labelledby="wards-link">
-									<span id="sunday-school-link">Wards</span></a></li>
+									<span id="wards-link">Wards</span></a></li>
 							</ul>
 						</li>
 						<li role="menuitem"><a href="unavailable.html" role="link" aria-labelledby="donations-link">
@@ -162,40 +158,55 @@
 				<p>We have a church council made up of representatives of all ministries according to the IM Model. Each of these 
 					members report to the CC on behalf of the ministry.</p>
 				<section id="cwm" role="region">
-					<h2><a href="mytcwm.html">CWM &amp; CWL</a></h2>
-					<p>Christian Women’s Ministry (<abbr title="Christian Women’s Ministry">CWM</abbr>) and Christian Women’s League 
-						(<abbr title="Christian Women’s League">CWL</abbr>). Women’s Prayer Group.</p>
+					<h2><a href="mytcwm.html" role="link" aria-labelledby="cwm-link"><abbr title="Christian Women’s Ministry">CWM</abbr> &amp; 
+						<abbr title="Christian Women’s League">CWL</abbr></a></h2>
+					<p>Christian Women’s Ministry (<abbr title="Christian Women’s Ministry">CWM</abbr>) and Christian Women’s League. 
+						(<abbr title="Christian Women’s League">CWL</abbr>). Women’s Prayer Group.
+							&nbsp;<a href="mytcwm.html">Read more about CWM here...</a></p>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<a href="mytcwm.html" role="link" aria-labelledby="cwm-link">
+								<img class="img-thumbnail img-responsive" src="assets/cwmEmblem948x956.jpg" width="200" height="200" 
+									alt="CWM MyT Emblem">
+							</a>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<a href="mytcwm.html" role="link" aria-labelledby="cwm-link">
+								<img class="img-thumbnail img-responsive" src="assets/cwlEmblem189x190.jpg" width="200" height="200" 
+									alt="CWL MyT Emblem">
+							</a>
+						</div>						
+					</div>
 				</section>
 				<section id="cmm" role="region">
-					<h2><a href="mytcmm.html">CMM</a></h2>
-					<p>Christian Men's Ministry (<abbr title="Christian Men's Ministry">CMM</abbr>). Men's Prayer Group</p>											
+					<h2><a href="mytcmm.html" role="link" aria-labelledby="cmm-link"><abbr title="Christian Men's Ministry">CMM</abbr></a></h2>
+					<p>Christian Men's Ministry (<abbr title="Christian Men's Ministry">CMM</abbr>). Men's Prayer Group.
+						&nbsp;<a href="mytcmm.html">Read more about CMM here!</a></p>
+					<p><a href="mytcwm.html" role="link" aria-labelledby="cmm-link">
+						<img class="img-thumbnail img-responsive" src="assets/cmmEmblemMain369x438.png" width="200" height="200" 
+							alt="CMM MyT Emblem"></a></p>										
 				</section>		
 				<section id="cym" role="region">
-					<h2>CYM</h2>
-					<p>Christian Youth Ministry (<abbr title="Christian Youth Ministry">CYM</abbr>). Youth Prayer Group</p>
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<section id="cym-content" role="region">
-								<p><strong>[Content about CYM here-This is not in the brochure. TO-DO: GET INFO ABOUT CYM FROM WINNIE/OUPA!!]</strong></p>
-							</section>
-							<section id="cym-members" role="region">
-								<p><strong>[Place list of members here. TO-DO: GET LIST OF MEMBERS AND CYM EMBLEM FROM OUPA/THEMBI]</strong></p>
-							</section>
-						</div>
-					</div>
+					<h2><a href="mytcym.html" role="link" aria-labelledby="cym-link"><abbr title="Christian Youth Ministry">CYM</abbr></a></h2>
+					<p>Christian Youth Ministry (<abbr title="Christian Youth Ministry">CYM</abbr>). Youth Prayer Group.
+						&nbsp;<a href="mytcym.html">Read more about CYM here!</a></p>
+					<p><a href="mytcym.html" role="link" aria-labelledby="cym-link">
+						<img class="img-thumbnail img-responsive" src="assets/cymPoster679x960.jpg" width="200" height="200" 
+							alt="CYM MyT Emblem"></a></p>
 				</section>	
+				<section id="myt-choir" role="region">
+					<h2><a href="choir.html" role="link" aria-labelledby="choir-link"><abbr title="Melodi ya Tshwane">MyT</abbr> Choir</a></h2>
+					<p>Melodi ya Tshwane Choir also known as MyTC.&nbsp;<a href="choir.html">Read more about MyTC here!</a></p>
+					<p><a href="choir.html" role="link" aria-labelledby="choir-link">
+						<img class="img-thumbnail img-responsive" src="assets/mytcCD1033x1026.jpeg" width="200" height="200" 
+							alt="MyT Choir CD Cover"></a></p>
+				</section>					
 				<section id="myt-youth" role="region">
-					<h2><abbr title="Melodi ya Tshwane">MyT</abbr> Youth</h2>
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<section id="myt-youth-content" role="region">
-								<p><strong>[Content about MyT Youth here-This is not in the brochure. TO-DO: GET INFO ABOUT MYT YOUTH FROM WINNIE/OUPA!!]</strong></p>
-							</section>
-							<section id="myt-youth-members" role="region">
-								<p><strong>[Place list of members here. TO-DO: GET LIST OF MEMBERS AND MyT YOUTH EMBLEM FROM OUPA/THEMBI]</strong></p>
-							</section>
-						</div>
-					</div>
+					<h2><a href="mytyouth.html" role="link" aria-labelledby="myt-youth-link"><abbr title="Melodi ya Tshwane">MyT</abbr> Youth</a></h2>
+					<p>Melodi ya Tshwane Youth Prayer group.&nbsp;<a href="mytyouth.html">Read more about MyT Youth here!</a></p>
+					<p><a href="mytyouth.html" role="link" aria-labelledby="myt-youth-link">
+						<img class="img-thumbnail img-responsive" src="" width="200" height="200" 
+							alt="MyT Youth Emblem"></a></p>
 				</section>	
 			</article>
 		</div>
@@ -239,8 +250,8 @@
 				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 myt-cen-txt">
 					<p>
 						<span class="glyphicon glyphicon-phone">&nbsp;</span>
-						<a href="#" target="_blank" role="link" aria-labelledby="google-play-link">Download our mobile App</a></p>
-					<p><a href="#" target="_blank" role="link" aria-labelledby="google-play-link">
+						<a href="unavailable.html" target="_blank" role="link" aria-labelledby="google-play-link">Download our mobile App</a></p>
+					<p><a href="unavailable.html" target="_blank" role="link" aria-labelledby="google-play-link">
 						<img class="img-responsive center-block" src="assets/googlePlayBadge320x200.png" alt="Google Play badge, 
 							black with transparent background and contains Google Play logo and the the words: GET IT ON GOOLGLE PLAY"/></a></p>
 					<p style="font-size:130%">
