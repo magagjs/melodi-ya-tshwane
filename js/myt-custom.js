@@ -1,5 +1,5 @@
 $(document).ready(function() {	
-	var lastScrollPos = 10;					// default scroll position 	
+	var lastScrollPos = 200;					// default scroll position 	
 	
 	// function to hide/display scroll icon at bottom of page when scroll up/down
 	var showNavArrow = function(){
@@ -18,7 +18,7 @@ $(document).ready(function() {
 		
 		// current scroll position must be greater than last scroll position
 		// navbar must not be 'collapsed in'
-		if ( (currentScrollPos > lastScrollPos) 
+		if ( (currentScrollPos > lastScrollPos) && (currentScrollPos != lastScrollPos) 
 				&& !isNavBarHasCollapsedIn ){	
 			$('nav').addClass('fall-out')		// hide navbar with animation
 				.removeClass('fall-in');	
@@ -28,6 +28,9 @@ $(document).ready(function() {
 		}
 		
 		lastScrollPos = currentScrollPos;		// reset the last scroll position to current
+		
+		console.log("currentScrollPos:" + currentScrollPos +"\n");
+		console.log("lastScrollPos:" + lastScrollPos +"\n");
 	};
 	
 	// fire events for scroll
