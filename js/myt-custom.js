@@ -29,26 +29,14 @@ $(document).ready(function() {
 		
 		lastScrollPos = currentScrollPos;		// reset the last scroll position to current
 		
-		console.log("currentScrollPos:" + currentScrollPos +"\n");
-		console.log("lastScrollPos:" + lastScrollPos +"\n");
+	/*		console.log("currentScrollPos:" + currentScrollPos +"\n");
+			console.log("lastScrollPos:" + lastScrollPos +"\n");*/
 	};
 	
 	// fire events for scroll
 	$(window).scroll(function(){
 		showNavArrow();		// run function to hide/display scroll icon
 		navBarScroll();		// run function to hide/display navbar
-		
-		// restore navbar to default menu if search button is activated
-		if( $('#search-box').hasClass('search-box-display') ){
-			$('#search-box').addClass('search-box-hide')		   		 // hide search box
-				.removeClass('search-box-display'); 			   		 
-			$('#search-button').addClass('glyphicon glyphicon-search')   // change close icon back into search icon
-				.removeClass('fas fa-window-close');
-			$('.navbar-brand-hide').addClass('navbar-brand')	   		 // display myt logo link
-				.removeClass('navbar-brand-hide'); 	
-			$('.navbar-header-hide').addClass('navbar-header')	   		 // display navbar-header Menu link
-				.removeClass('navbar-header-hide'); 
-		}
 	});
 	
 	// smooth scroll to top of page when scroll icon link clicked
@@ -71,6 +59,9 @@ $(document).ready(function() {
 				.removeClass('navbar-brand'); 
 			$('.navbar-header').addClass('navbar-header-hide')	   // remove navbar-header Menu link
 				.removeClass('navbar-header'); 
+			
+			// put focus on search box input field
+			$('#search-box-input').focus();
 		}else{
 			$('#search-box').addClass('search-box-hide')		   		 // hide search box
 				.removeClass('search-box-display'); 			   		 // remove display class used to display search box
@@ -84,6 +75,42 @@ $(document).ready(function() {
 			
 		return false;
 	});
+	
+	// restore navbar to default menu if search-box input field loses focus
+	$('#search-box-input').focusout(function(){
+		if( $('#search-box').hasClass('search-box-display') ){
+			$('#search-box').addClass('search-box-hide')		   		 // hide search box
+				.removeClass('search-box-display'); 			   		 
+			$('#search-button').addClass('glyphicon glyphicon-search')   // change close icon back into search icon
+				.removeClass('fas fa-window-close');
+			$('.navbar-brand-hide').addClass('navbar-brand')	   		 // display myt logo link
+				.removeClass('navbar-brand-hide'); 	
+			$('.navbar-header-hide').addClass('navbar-header')	   		 // display navbar-header Menu link
+				.removeClass('navbar-header-hide'); 
+		}
+		console.log("Search BOX loses focus");
+	});
+	
+/*	// restore navbar to default menu if search-button loses focus
+	$('.toggle-search').focusout(function(){
+		var isSearchBoxFocus = $('#search-box').is(":focus");
+		
+		console.log("isSearchBoxFocus: "+isSearchBoxFocus);
+		
+		if(!isSearchBoxFocus){
+			if( $('#search-box').hasClass('search-box-display') ){
+				$('#search-box').addClass('search-box-hide')		   		 // hide search box
+					.removeClass('search-box-display'); 			   		 
+				$('#search-button').addClass('glyphicon glyphicon-search')   // change close icon back into search icon
+					.removeClass('fas fa-window-close');
+				$('.navbar-brand-hide').addClass('navbar-brand')	   		 // display myt logo link
+					.removeClass('navbar-brand-hide'); 	
+				$('.navbar-header-hide').addClass('navbar-header')	   		 // display navbar-header Menu link
+					.removeClass('navbar-header-hide'); 
+			}
+			console.log("Search BUTTON loses focus");
+		}
+	});*/
 	
 	// accordion to display minus icon to an element that is collapsed in panel-heading
 	$(".collapse.in").each(function(){
