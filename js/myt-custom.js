@@ -1,5 +1,5 @@
 $(document).ready(function() {	
-	var lastScrollPos = 0;					// default scroll position 	
+	var lastScrollPos = 10;					// default scroll position 	
 	
 	// function to hide/display scroll icon at bottom of page when scroll up/down
 	var showNavArrow = function(){

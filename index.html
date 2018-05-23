@@ -101,7 +101,7 @@
 						<li class="active" role="menuitem" aria-labelledby="homeLink"><a href="index.html" role="link">
 							<span id="homeLink">Home</span></a></li>
 						<li class="dropdown" role="menuitem" aria-labelledby="aboutus-link" aria-haspopup="true">
-							<a href="aboutus.html" role="link" aria-labelledby="aboutus-link">
+							<a href="aboutus.html" class="dropdown-toggle" data-toggle="dropdown" role="link" aria-labelledby="aboutus-link">
 								<span id="aboutus-link">About us</span><b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu">
@@ -117,12 +117,14 @@
 							<a href="gallery.html" role="link" aria-labelledby="gallery-link">
 								<span id="gallery-link">Gallery</span></a></li>
 						<li  class="dropdown" role="menuitem" aria-labelledby="ministries-link" aria-haspopup="true">
-							<a href="ministries.html" role="link" aria-labelledby="ministries-link">
+							<a href="ministries.html" class="dropdown-toggle" data-toggle="dropdown" role="link" aria-labelledby="ministries-link">
 								<span id="ministries-link">Ministries</span><b class="caret"></b>
 							</a>   
 							<ul class="dropdown-menu" role="menu">
 								<li role="menuitem"><a href="mytcwm.html" role="link" aria-labelledby="cwm-link">
 									<span id="cwm-link">CWM</span></a></li>
+								<li role="menuitem"><a href="mytcwl.html" role="link" aria-labelledby="cwl-link">
+									<span id="cwl-link">CWL</span></a></li>										
 								<li role="menuitem"><a href="mytcmm.html" role="link" aria-labelledby="cmm-link">
 									<span id="cmm-link">CMM</span></a></li>
 								<li role="menuitem"><a href="mytcym.html" role="link" aria-labelledby="cym-link">
@@ -134,7 +136,7 @@
 							</ul>									
 						</li>										
 						<li class="dropdown" role="menuitem" aria-labelledby="congregation-link" aria-haspopup="true">
-							<a href="congregation.html" role="link" aria-labelledby="congregation-link">
+							<a href="congregation.html" class="dropdown-toggle" data-toggle="dropdown" role="link" aria-labelledby="congregation-link">
 								<span id="congregation-label">Congregation</span><b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu">
@@ -184,18 +186,14 @@
 	</div>	<!-- End Carousel -->
 	
 	<div class="container clearfix main-body"> <!-- Main Body Container -->
-<!-- 		<div id="search-box" class="row search-box-hide myt-cen-txt">	Toggable Search box
-			<form style="margin-top: 5px" action="index.html" method="post" role="search">
-				<div class="form-group has-feedback has-feedback-right">
-					<input type="search" name="search" 
-						class="form-control" placeholder="Type the search words and press Enter">
-					<i class="glyphicon glyphicon-search form-control-feedback"></i>
-				</div>
-			</form>
-		</div>		End Toggable Search box -->
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<article class="row" role="main">
+				<div aria-label="breadcrumb">	<!-- Breadcrumbs -->
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item active" aria-current="page">Home</li>
+					</ol>
+				</div>							<!-- End Breadcrumbs -->
+				<article role="main">
 					<h1><i class="fas fa-church"></i>&nbsp;<abbr title="Uniting Reformed Church in Southern Africa">
 						URCSA</abbr> Melodi ya Tshwane</h1>
 					<section class="row" role="region">

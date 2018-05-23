@@ -96,7 +96,7 @@
 						<li role="menuitem" aria-labelledby="homeLink"><a href="index.html" role="link">
 							<span id="homeLink">Home</span></a></li>
 						<li class="dropdown" role="menuitem" aria-labelledby="aboutus-link" aria-haspopup="true">
-							<a href="aboutus.html" role="link" aria-labelledby="aboutus-link">
+							<a href="aboutus.html" class="dropdown-toggle" data-toggle="dropdown" role="link" aria-labelledby="aboutus-link">
 								<span id="aboutus-link">About us</span><b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu">
@@ -112,12 +112,14 @@
 							<a href="gallery.html" role="link" aria-labelledby="gallery-link">
 								<span id="gallery-link">Gallery</span></a></li>
 						<li  class="dropdown" role="menuitem" aria-labelledby="ministries-link" aria-haspopup="true">
-							<a href="ministries.html" role="link" aria-labelledby="ministries-link">
+							<a href="ministries.html" class="dropdown-toggle" data-toggle="dropdown" role="link" aria-labelledby="ministries-link">
 								<span id="ministries-link">Ministries</span><b class="caret"></b>
 							</a>   
 							<ul class="dropdown-menu" role="menu">
 								<li role="menuitem"><a href="mytcwm.html" role="link" aria-labelledby="cwm-link">
 									<span id="cwm-link">CWM</span></a></li>
+								<li role="menuitem"><a href="mytcwl.html" role="link" aria-labelledby="cwl-link">
+									<span id="cwl-link">CWL</span></a></li>										
 								<li role="menuitem"><a href="mytcmm.html" role="link" aria-labelledby="cmm-link">
 									<span id="cmm-link">CMM</span></a></li>
 								<li role="menuitem"><a href="mytcym.html" role="link" aria-labelledby="cym-link">
@@ -129,7 +131,7 @@
 							</ul>									
 						</li>										
 						<li class="dropdown" role="menuitem" aria-labelledby="congregation-link"  aria-haspopup="true">
-							<a href="congregation.html" role="link" aria-labelledby="congregation-link">
+							<a href="congregation.html" class="dropdown-toggle" data-toggle="dropdown" role="link" aria-labelledby="congregation-link">
 								<span id="congregation-link">Congregation</span><b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu">
@@ -154,11 +156,23 @@
 		</nav>  			<!-- End Nav Section -->
 	</header>				<!-- End Header Section -->
 	
-	<div class="container myt-cen-txt main-body">	<!-- Main Body -->
-		<h1>Page Under Construction</h1>
-		<p style="font-size:120%;"><strong>Sorry, this page is under construction!</strong></p>
-		<p><strong>An announcement will be made in church once construction is complete.</strong></p>	
-		<img class="img-responsive center-block" alt="Construction sign" src="assets/siteUnderConstruction.jpg" width="320" height="200">
+	<div class="container main-body">	<!-- Main Body -->
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div aria-label="breadcrumb">	<!-- Breadcrumbs -->
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Page Unavailable</li>
+					</ol>
+				</div>							<!-- End Breadcrumbs -->	
+				<article class="myt-cen-txt" role="main">
+					<h1>Page Under Construction</h1>
+					<p style="font-size:120%;"><strong>Sorry, this page is under construction!</strong></p>
+					<p><strong>An announcement will be made in church once construction is complete.</strong></p>	
+					<img class="img-responsive center-block" alt="Construction sign" src="assets/siteUnderConstruction.jpg" width="320" height="200">
+				</article>
+			</div>
+		</div>
 	</div>		<!-- End Main Body -->
 	
 	<footer role="contentinfo">	<!-- Footer -->

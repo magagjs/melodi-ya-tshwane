@@ -93,10 +93,9 @@
 					<ul class="nav navbar-nav" role="menubar">
 						<li role="menuitem" aria-labelledby="homeLink"><a href="index.html" role="link">
 							<span id="homeLink">Home</span></a></li>
-						<li class="dropdown" role="menuitem" aria-labelledby="about-us-label" aria-haspopup="true">
+						<li class="dropdown" role="menuitem" aria-labelledby="aboutus-link" aria-haspopup="true">
 							<a href="aboutus.html" class="dropdown-toggle" data-toggle="dropdown">
-								<span id="about-us-label">About us</span>
-								<b class="caret"></b>
+								<span id="aboutus-link">About us</span><b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu">
 								<li role="menuitem"><a href="aboutus.html#vision" role="link" aria-labelledby="history-link">
@@ -110,14 +109,15 @@
 						<li role="menuitem" aria-labelledby="homeLink">
 							<a href="gallery.html" role="link" aria-labelledby="gallery-link">
 								<span id="gallery-link">Gallery</span></a></li>
-						<li  class="dropdown" role="menuitem" aria-labelledby="ministries-label" aria-haspopup="true">
-							<a href="ministries.html" class="dropdown-toggle" data-toggle="dropdown"
-								role="link" aria-labelledby="ministries-label">
+						<li  class="dropdown" role="menuitem" aria-labelledby="ministries-link" aria-haspopup="true">
+							<a href="ministries.html" class="dropdown-toggle" data-toggle="dropdown" role="link" aria-labelledby="ministries-link">
 								<span id="ministries-link">Ministries</span><b class="caret"></b>
 							</a>   
 							<ul class="dropdown-menu" role="menu">
 								<li role="menuitem"><a href="mytcwm.html" role="link" aria-labelledby="cwm-link">
 									<span id="cwm-link">CWM</span></a></li>
+								<li role="menuitem"><a href="mytcwl.html" role="link" aria-labelledby="cwl-link">
+									<span id="cwl-link">CWL</span></a></li>										
 								<li role="menuitem"><a href="mytcmm.html" role="link" aria-labelledby="cmm-link">
 									<span id="cmm-link">CMM</span></a></li>
 								<li role="menuitem"><a href="mytcym.html" role="link" aria-labelledby="cym-link">
@@ -128,11 +128,9 @@
 									<span id="myt-youth-link">MyT Youth</span></a></li>
 							</ul>									
 						</li>										
-						<li class="dropdown active" role="menuitem">
-							<a href="congregation.html" class="dropdown-toggle" data-toggle="dropdown" 
-								role="link" aria-labelledby="congregation-label">
-									<span id="congregation-label">Congregation</span>
-								<b class="caret"></b>
+						<li class="dropdown active" role="menuitem" aria-labelledby="congregation-link" aria-haspopup="true">
+							<a href="congregation.html" class="dropdown-toggle" data-toggle="dropdown" role="link" aria-labelledby="congregation-link">
+								<span id="congregation-link">Congregation</span><b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu">
 								<li role="menuitem"><a href="announcements.html" role="link" aria-labelledby="announcement-link">
@@ -156,13 +154,23 @@
 		</nav>  			<!-- End Nav Section -->
 	</header>				<!-- End Header Section -->
 	<div class="container clearfix main-body" role="main">		<!-- Main Body Container -->
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<article class="row" role="main">
-				<h1><i class="fas fa-comments"></i>&nbsp;&nbsp;Communications Committee</h1>
-				<section id="communications-home" role="region">
-					
-				</section>
-			</article>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div aria-label="breadcrumb">	<!-- Breadcrumbs -->
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item"><a href="congregation.html">Congregation</a></li>
+						<li class="breadcrumb-item"><a href="congregation.html#committees">Committees</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Communications Committee</li>
+					</ol>
+				</div>							<!-- End Breadcrumbs -->		
+				<article role="main">
+					<h1><i class="fas fa-comments"></i>&nbsp;&nbsp;Communications Committee</h1>
+					<section id="communications-home" role="region">
+						
+					</section>
+				</article>
+			</div>
 		</div>
 	</div>		<!-- End Main Body Container -->
 	<footer role="contentinfo">	<!-- Footer -->
