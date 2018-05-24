@@ -5,9 +5,7 @@ $(document).ready(function() {
 	var displaySearchButton = function(){
 		if( $('#search-box').hasClass('search-box-display') ){
 			// remove focus from search box input field
-			$('#search-box-input').blur();
-			// remove focus from search box div
-			$('#search-btn-div').blur();
+			//$('#search-box-input').blur();
 			
 			$('#search-box').addClass('search-box-hide')		// hide search box
 				.removeClass('search-box-display'); 			 
@@ -54,7 +52,7 @@ $(document).ready(function() {
 		
 		// current scroll position must be greater than last scroll position
 		// navbar must not be 'collapsed in'
-		if ( (currentScrollPos > lastScrollPos) && (currentScrollPos != lastScrollPos) 
+		if ( (currentScrollPos > lastScrollPos) 
 				&& !isNavBarHasCollapsedIn ){	
 			$('nav').addClass('fall-out')		// hide navbar with animation
 				.removeClass('fall-in');	
