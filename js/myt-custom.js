@@ -1,11 +1,13 @@
 $(document).ready(function() {	
-	var lastScrollPos = 200;	// default scroll position 	
+	var lastScrollPos = 1000;	// default scroll position 	
 	
 	//display search button and hide search box - display navbar elements
 	var displaySearchButton = function(){
 		if( $('#search-box').hasClass('search-box-display') ){
-			// remove focus on search box input field
-			//$('#search-box-input').blur();
+			// remove focus from search box input field
+			$('#search-box-input').blur();
+			// remove focus from search box div
+			$('#search-btn-div').blur();
 			
 			$('#search-box').addClass('search-box-hide')		// hide search box
 				.removeClass('search-box-display'); 			 
