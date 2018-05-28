@@ -12,6 +12,96 @@ body{
 	font-size: 16px;
 }
 
+/* font size and layout of entire site for small screens */
+@media (max-width: 480px){
+	body{
+		font-size: 14px;
+	}
+	
+	/* footer must have fine nyana print on small devices */
+	footer{
+		font-size: 11px;
+	}
+	
+	/* footer horizontal padding on <div> must be small nyana on small devices: overwrite grid-framework.less */
+	footer .col-sm-1, footer .col-sm-2, footer .col-sm-3, footer .col-sm-4, footer .col-sm-5, footer .col-sm-6, 
+	footer .col-sm-7, footer .col-sm-8, footer .col-sm-9, footer .col-sm-10, footer .col-sm-11, 
+	footer .col-xs-1, footer .col-xs-2, footer .col-xs-3, footer .col-xs-4, footer .col-xs-5, footer .col-xs-6, 
+	footer .col-xs-7, footer .col-xs-8, footer .col-xs-9, footer .col-xs-10, footer .col-xs-11{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	/* footer horizontal padding on <div> must be small nyana on small devices: overwrite grid-framework.less */
+	footer .col-xs-12,  
+	footer .col-sm-12{
+		padding-left: 5px;	/* just so viewport still is able to house all content without content moving to edges */
+		padding-right: 5px;
+	} 
+	
+	/* Change heading font sizes on small devices */
+	h1{
+	  font-size: 20px;
+	  margin-top: 10px;	/* overwrite Bootstrap margins-need less space on small devices */
+	}
+	
+	h2{
+	  font-size: 18px;
+	  margin-top: 10px;	/* overwrite Bootstrap margins-need less space on small devices */
+	}
+	
+	h3{
+	  font-size: 16px;
+	  margin-top: 10px;	/* overwrite Bootstrap margins-need less space on small devices */
+	}
+	
+	h4{
+	  font-size: 14px;
+	}
+	
+	h5{
+	  font-size: 12px;
+	}
+	
+	h6{
+	  font-size: 10px;
+	}
+	
+	/* overwrite Bootstrap vertical padding for <p> */
+	.jumbotron{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+		
+	/* overwrite Bootstrap font size for <p> */
+	.jumbotron p{
+		font-size: 14px;
+	}
+	
+	/* all <p> elements where the parent is a <blockquote> inside a .jumbotron.*/
+	.jumbotron blockquote p{
+		font-size: 14px;
+	}
+	
+	/* overwrite Bootstrap margins - need to look good on small devices */
+	.jumbotron h1,
+	.jumbotron h2,
+	.jumbotron h3{
+		margin-top: 0px;
+	}
+		
+	/* normalize.less sets its own font size - override it*/		
+	blockquote{		
+		font-size: 14px;	
+	}	
+}
+
+/* overwrite Bootstrap vertical padding for <p> */
+.jumbotron{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 /* Google font to be used throughout site headings */
 h1,
 h2,
@@ -121,7 +211,7 @@ p[title="Choir itunes"] > a:visited {
 /* override color of btn-primary */
 .btn-primary {
 	color: #F8F8FF;
-	background-color: c
+	background-color: #B8860B;
 	border-color: #DAA520;
 	margin: 10px 0px 5px 10px;
 }
@@ -211,8 +301,8 @@ header + .carousel{
 
 /* vertical spacing in between breadcrumbs */
 ol.breadcrumb{
-	padding-top: 20px;		/* so that navbar does not obstruct */
-	margin-bottom: 5px;	/* overwrite Bootstrap 20px */
+	padding-top: 10px;		
+	margin-bottom: 5px;		/* overwrite Bootstrap 20px */
 }
 
 /* vertical spacing in between sections */
@@ -385,6 +475,10 @@ header .toggle-search{
 	padding: 15px;
 }
 
+.toggle-search-hide{
+	display:block;
+}
+
 /* change styles of drop-down links in header for medium, small and extra small devices */
 @media (max-width: 767px) {
 	/* dont add offset padding-left for menubar on mobile devices*/
@@ -483,17 +577,22 @@ a.scrollIcon {
 }
 
 
-/* hide search box - Search onclick behaviour*/
+/* hide search box - Search onclick behaviour */
 .search-box-hide{
 	display: none;
 }
 
-/* hide organisation navbar branding (logo) - Search onclick behaviour*/
+/* hide search button */
+.search-button-hide{
+	display: none;
+}
+
+/* hide organisation navbar branding (logo) - Search onclick behaviour */
 .navbar-brand-hide{
 	display: none;
 }
 
-/* hide navbar Menu on small devices - Search onclick behaviour*/
+/* hide navbar Menu on small devices - Search onclick behaviour */
 .navbar-header-hide{
 	display: none;
 }

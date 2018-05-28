@@ -1,4 +1,36 @@
 $(document).ready(function() {	
+	
+	// w3schools function to include HTML - will be used to include footer and any other HTML that occurs on all pages:
+	// https://www.w3schools.com/howto/howto_html_include.asp
+	var w3IncludeHTML = function includeHTML() {
+		var z, i, elmnt, file, xhttp;
+		/*loop through a collection of all HTML elements:*/
+		z = document.getElementsByTagName("*");
+		for (i = 0; i < z.length; i++) {
+		   elmnt = z[i];
+		   /*search for elements with a certain atrribute:*/
+		   file = elmnt.getAttribute("w3-include-html");
+		   if (file) {
+			   /*make an HTTP request using the attribute value as the file name:*/
+			   xhttp = new XMLHttpRequest();
+			   xhttp.onreadystatechange = function() {
+			       if (this.readyState == 4) {
+			    	   if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+			    	   if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+			    	   /*remove the attribute, and call this function once more:*/
+			    	   elmnt.removeAttribute("w3-include-html");
+			    	   includeHTML();
+			       }
+			   };
+			   xhttp.open("GET", file, true);
+			   xhttp.send();
+			   /*exit the function:*/
+			   return;
+		   }
+		}
+	};
+	w3IncludeHTML();	
+	
 	var lastScrollPos = 1000;	// default scroll position 	
 	
 	//display search button and hide search box - display navbar elements
@@ -106,10 +138,12 @@ $(document).ready(function() {
 	
 	// accordion to toggle plus/minus icon to an element that is collapsed/expanded in panel-heading
 	$(".collapse").on('show.bs.collapse', function(){
-		$(this).parent().find(".fas").removeClass("fa-plus").addClass("fa-minus");})
-			.on('hide.bs.collapse', function(){
-				$(this).parent().find(".fas").removeClass("fa-minus").addClass("fa-plus");
-			});	
+		$(this).parent().find(".fas").removeClass("fa-plus").addClass("fa-minus");
+	})
+	.on('hide.bs.collapse', function(){
+		$(this).parent().find(".fas").removeClass("fa-minus").addClass("fa-plus");
+	});	
+	
 });
 	
 
