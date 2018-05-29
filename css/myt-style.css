@@ -772,4 +772,14 @@ Plugins, iFrames and Widgets
 	text-align: center;
 }
 
+/* Tipue Search CSS */
+.tipue_search_content_title{   /* Vertical space between each title and last content*/
+	padding-top: 30px;
+}
+@media (max-width: 480px) {
+	.tipue_search_content_title{   /* Vertical space between each title and last content*/
+		padding-top: 20px;
+	}
+}
+
 
