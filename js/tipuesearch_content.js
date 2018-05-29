@@ -1,3 +1,4 @@
+/* Modified for Myt Website: 2018/05/29 */
 
 var tipuesearch = {"pages": [
      {"title": "Tipue", "text": "Tipue is a small web development studio based in North London.", "tags": "jQuery HTML5 CSS", "url": "http://www.tipue.com"},

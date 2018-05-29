@@ -6,6 +6,7 @@ Tipue Search is released under the MIT License
 http://www.tipue.com/search
 */
 
+/* Modified for Myt Website: 2018/05/29 */
 
 (function($) {
 
@@ -25,12 +26,12 @@ http://www.tipue.com/search
           'minimumLength'          : 3,
           'mode'                   : 'static',
           'newWindow'              : false,
-          'show'                   : 15,
+          'show'                   : 9,
           'showContext'            : true,
           'showRelated'            : true,
           'showTime'               : true,
           'showTitleCount'         : true,
-          'showURL'                : false,
+          'showURL'                : true,
           'wholeWords'             : true
           
           }, options);
@@ -502,7 +503,7 @@ http://www.tipue.com/search
                                    
                                    if (start > 0)
                                    {
-                                       out += '<li class="page-item" role="navigation"><a class="tipue_search_foot_box, page-link" accesskey="b" id="' + (start - set.show) + '_' + replace + '">' + tipuesearch_string_6 + '</a></li>'; 
+                                       out += '<li role="navigation"><a class="tipue_search_foot_box" accesskey="b" id="' + (start - set.show) + '_' + replace + '">' + tipuesearch_string_6 + '</a></li>'; 
                                    }
                                                        
                                    if (page <= 2)
@@ -516,11 +517,11 @@ http://www.tipue.com/search
                                         {
                                              if (f == page)
                                              {
-                                                  out += '<li class="current page-item active" role="navigation"><a class="page-link" href="#">' + (f + 1) + '</a></li>';
+                                                  out += '<li class="current active" role="navigation"><a href="#">' + (f + 1) + '</a></li>';
                                              }
                                              else
                                              {
-                                                  out += '<li class="page-item" role="navigation"><a class="tipue_search_foot_box page-link" id="' + (f * set.show) + '_' + replace + '">' + (f + 1) + '</a></li>';
+                                                  out += '<li role="navigation"><a class="tipue_search_foot_box" id="' + (f * set.show) + '_' + replace + '">' + (f + 1) + '</a></li>';
                                              }
                                         }
                                    }
@@ -535,18 +536,18 @@ http://www.tipue.com/search
                                         {
                                              if (f == page)
                                              {
-                                                  out += '<li class="current page-item active" role="navigation"><a class="page-link" href="#">' + (f + 1) + '</a></li>';
+                                                  out += '<li class="current active" role="navigation"><a href="#">' + (f + 1) + '</a></li>';
                                              }
                                              else
                                              {
-                                                  out += '<li class="page-item" role="navigation"><a class="tipue_search_foot_box page-link" id="' + (f * set.show) + '_' + replace + '">' + (f + 1) + '</a></li>';
+                                                  out += '<li role="navigation"><a class="tipue_search_foot_box" id="' + (f * set.show) + '_' + replace + '">' + (f + 1) + '</a></li>';
                                              }
                                         }
                                    }                         
                                                       
                                    if (page + 1 != pages)
                                    {
-                                       out += '<li class="page-item" role="navigation"><a class="tipue_search_foot_box page-link" accesskey="m" id="' + (start + set.show) + '_' + replace + '">' + tipuesearch_string_7 + '</a></li>'; 
+                                       out += '<li role="navigation"><a class="tipue_search_foot_box" accesskey="m" id="' + (start + set.show) + '_' + replace + '">' + tipuesearch_string_7 + '</a></li>'; 
                                    }                    
                                    
                                    out += '</ul></div></nav>';

@@ -6,6 +6,7 @@ Tipue Search is released under the MIT License
 http://www.tipue.com/search
 */
 
+/* Modified for Myt Website: 2018/05/29 */
 
 /*
 Stop words
@@ -79,30 +80,28 @@ var tipuesearch_string_15 = 'Searches related to';
 var startTimer = new Date().getTime();
 
 // MyT Changes:2018/05/29: List of pages to search: Localhost
-/*var tipuesearch_pages = ["http://localhost:8080/MYT_Website/","http://localhost:8080/MYT_Website/index.html","http://localhost:8080/MYT_Website/aboutus.html",
-                         "http://localhost:8080/MYT_Website/academiccom.html", "http://localhost:8080/MYT_Website/announcements.html",
+var tipuesearch_pages = ["http://localhost:8080/MYT_Website/","http://localhost:8080/MYT_Website/aboutus.html",
+                         "http://localhost:8080/MYT_Website/academiccom.html","http://localhost:8080/MYT_Website/announcements.html",
                          "http://localhost:8080/MYT_Website/choir.html","http://localhost:8080/MYT_Website/communicationscom.html",
                          "http://localhost:8080/MYT_Website/congregation.html","http://localhost:8080/MYT_Website/events.html",
                          "http://localhost:8080/MYT_Website/financecom.html","http://localhost:8080/MYT_Website/footer.html",
                          "http://localhost:8080/MYT_Website/gallery.html","http://localhost:8080/MYT_Website/healthcom.html",
-                         "http://localhost:8080/MYT_Website/index.html","http://localhost:8080/MYT_Website/ministries.html",
-                         "http://localhost:8080/MYT_Website/mytcmm.html","http://localhost:8080/MYT_Website/mytcwl.html",
-                         "http://localhost:8080/MYT_Website/mytcwm.html","http://localhost:8080/MYT_Website/mytcym.html",
-                         "http://localhost:8080/MYT_Website/mytyouth.html","http://localhost:8080/MYT_Website/outreachcom.html",
-                         "http://localhost:8080/MYT_Website/privacy.html","http://localhost:8080/MYT_Website/scripture.html",
-                         "http://localhost:8080/MYT_Website/wards.html"];*/
+                         "http://localhost:8080/MYT_Website/ministries.html","http://localhost:8080/MYT_Website/mytcmm.html",
+                         "http://localhost:8080/MYT_Website/mytcwl.html","http://localhost:8080/MYT_Website/mytcwm.html",
+                         "http://localhost:8080/MYT_Website/mytcym.html","http://localhost:8080/MYT_Website/mytyouth.html",
+                         "http://localhost:8080/MYT_Website/outreachcom.html","http://localhost:8080/MYT_Website/privacy.html",
+                         "http://localhost:8080/MYT_Website/scripture.html","http://localhost:8080/MYT_Website/wards.html"];
 
 //MyT Changes:2018/05/29: List of pages to search: Github
-var tipuesearch_pages = ["https://magags.github.io/myt/","https://magags.github.io/myt/index.html","https://magags.github.io/myt/aboutus.html",
+/*var tipuesearch_pages = ["https://magags.github.io/myt/","https://magags.github.io/myt/aboutus.html",
                          "https://magags.github.io/myt/academiccom.html", "https://magags.github.io/myt/announcements.html",
                          "https://magags.github.io/myt/choir.html","https://magags.github.io/myt/communicationscom.html",
                          "https://magags.github.io/myt/congregation.html","https://magags.github.io/myt/events.html",
                          "https://magags.github.io/myt/financecom.html","https://magags.github.io/myt/footer.html",
                          "https://magags.github.io/myt/gallery.html","https://magags.github.io/myt/healthcom.html",
-                         "https://magags.github.io/myt/index.html","https://magags.github.io/myt/ministries.html",
-                         "https://magags.github.io/myt/mytcmm.html","https://magags.github.io/myt/mytcwl.html",
-                         "https://magags.github.io/myt/mytcwm.html","https://magags.github.io/myt/mytcym.html",
-                         "https://magags.github.io/myt/mytyouth.html","https://magags.github.io/myt/outreachcom.html",
-                         "https://magags.github.io/myt/privacy.html","https://magags.github.io/myt/scripture.html",
-                         "https://magags.github.io/myt/wards.html"];
+                         "https://magags.github.io/myt/ministries.html","https://magags.github.io/myt/mytcmm.html",
+                         "https://magags.github.io/myt/mytcwl.html","https://magags.github.io/myt/mytcwm.html",
+                         "https://magags.github.io/myt/mytcym.html","https://magags.github.io/myt/mytyouth.html",
+                         "https://magags.github.io/myt/outreachcom.html","https://magags.github.io/myt/privacy.html",
+                         "https://magags.github.io/myt/scripture.html","https://magags.github.io/myt/wards.html"];*/
 
