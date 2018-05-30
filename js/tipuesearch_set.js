@@ -90,7 +90,7 @@ var startTimer = new Date().getTime();
                          "http://localhost:8080/MYT_Website/mytcwl.html","http://localhost:8080/MYT_Website/mytcwm.html",
                          "http://localhost:8080/MYT_Website/mytcym.html","http://localhost:8080/MYT_Website/mytyouth.html",
                          "http://localhost:8080/MYT_Website/outreachcom.html","http://localhost:8080/MYT_Website/privacy.html",
-                         "http://localhost:8080/MYT_Website/scripture.html","http://localhost:8080/MYT_Website/wards.html"];*/
+                         "http://localhost:8080/MYT_Website/wards.html"];*/
 
 //MyT Changes:2018/05/29: List of pages to search: Github
 var tipuesearch_pages = ["https://magags.github.io/myt/","https://magags.github.io/myt/aboutus.html",
@@ -103,5 +103,5 @@ var tipuesearch_pages = ["https://magags.github.io/myt/","https://magags.github.
                          "https://magags.github.io/myt/mytcwl.html","https://magags.github.io/myt/mytcwm.html",
                          "https://magags.github.io/myt/mytcym.html","https://magags.github.io/myt/mytyouth.html",
                          "https://magags.github.io/myt/outreachcom.html","https://magags.github.io/myt/privacy.html",
-                         "https://magags.github.io/myt/scripture.html","https://magags.github.io/myt/wards.html"];
+                         "https://magags.github.io/myt/wards.html"];
 
